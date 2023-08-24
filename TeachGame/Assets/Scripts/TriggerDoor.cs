@@ -6,7 +6,6 @@ public class TriggerDoor : MonoBehaviour
 {
     [SerializeField] Animator myDoor = null;
 
-    Collider collider;
     [SerializeField] bool openTrigger = false;
     [SerializeField] bool closeTrigger = false;
     [SerializeField] string OpenName = "DoorOpen";
@@ -15,7 +14,6 @@ public class TriggerDoor : MonoBehaviour
 
     void Start()
     {
-        collider = GetComponent<Collider>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -26,7 +24,6 @@ public class TriggerDoor : MonoBehaviour
             {
                 myDoor.Play(OpenName,0,0.0f);
                 //gameObject.SetActive(false);
-                //collider.enabled = true;
             }
             if(closeTrigger)
             {
