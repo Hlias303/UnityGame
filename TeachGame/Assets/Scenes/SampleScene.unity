@@ -1905,7 +1905,6 @@ GameObject:
   - component: {fileID: 842168044}
   - component: {fileID: 842168043}
   - component: {fileID: 842168046}
-  - component: {fileID: 842168047}
   m_Layer: 0
   m_Name: CloseTrigger
   m_TagString: Untagged
@@ -2006,18 +2005,6 @@ MonoBehaviour:
   closeTrigger: 1
   OpenName: DoorOpen
   CloseName: CloceDoor
---- !u!114 &842168047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 842168041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6ee7a746e5e85d49aca4b6d70cc80d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &866241983
 GameObject:
   m_ObjectHideFlags: 0
@@ -3042,7 +3029,6 @@ GameObject:
   - component: {fileID: 1505330194}
   - component: {fileID: 1505330193}
   - component: {fileID: 1505330196}
-  - component: {fileID: 1505330197}
   m_Layer: 0
   m_Name: OpenTrigger
   m_TagString: Untagged
@@ -3143,18 +3129,6 @@ MonoBehaviour:
   closeTrigger: 0
   OpenName: DoorOpen
   CloseName: CloceDoor
---- !u!114 &1505330197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1505330191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6ee7a746e5e85d49aca4b6d70cc80d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1531457067 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4162844446324069866, guid: c40d37d92252e3b4b966a91695e5b154, type: 3}
