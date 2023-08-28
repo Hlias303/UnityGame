@@ -43,6 +43,8 @@
      <Compile Include="Assets\Scripts\Player\PlayerInteract.cs" />
      <Compile Include="Assets\Scripts\NPCInteract.cs" />
      <Compile Include="Assets\Scripts\TriggerDoor.cs" />
+     <Compile Include="Assets\Scripts\Keypad.cs" />
+     <Compile Include="Assets\Scripts\BigDoor.cs" />
      <None Include="Assets\Door Texture Pack\Readme.txt" />
      <None Include="Assets\Stylized NPC - Peasant Nolant\README.txt" />
     <Reference Include="UnityEngine">

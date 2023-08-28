@@ -13,10 +13,15 @@ public class PlayerInteract : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      
+    }
+
+    void InteractNpc()
+    {
         if (Input.GetKeyDown(KeyCode.E))
         {   
-            float interactRange = 2f;
-            Collider[] colliderArray = Physics.OverlapSphere(transform.position,interactRange);
+            //float interactRange = 2f;
+            Collider[] colliderArray = Physics.OverlapBox(transform.position,transform.localScale *2);
             foreach(Collider collider in colliderArray)
             {
                 if(collider.TryGetComponent(out NPCInteract NPC))
@@ -27,3 +32,4 @@ public class PlayerInteract : MonoBehaviour
         }
     }
 }
+
