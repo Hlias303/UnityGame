@@ -13,7 +13,7 @@ public class Keypad : MonoBehaviour
     [SerializeField] private Canvas canvasKey;
 
     [SerializeField] private GameObject player;
-    [SerializeField] string OpenName = "DoorOpen6";
+    [SerializeField] string OpenName = "DoorOpenBig";
     //[SerializeField]int Time_to_wait = 3;
     private string Answer = "123";
 
@@ -42,7 +42,8 @@ public class Keypad : MonoBehaviour
         {
             Ans.text = "Correct!";
             Ans.color = Color.green;
-            Invoke("OpenDoor",2);
+            OpenDoor();
+            //Invoke("OpenDoor",2);
             Invoke("DisableKeypad",2);
 
         }
