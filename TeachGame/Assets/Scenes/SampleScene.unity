@@ -1012,13 +1012,65 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactCanvas: {fileID: 1747492807}
   QnA:
-  - Question: poutses
+  - Question: 'A Class is ________. '
     Answers:
-    - polles
-    - polles
-    - para polles
-    - 'para '
+    - a user-defined data type
+    - a pointer to a methdo
+    - also known as an object
+    - special variable
+    CorrectAnswer: 1
+  - Question: Class member attributes can be accessed with the ________ operator.
+    Answers:
+    - .
+    - <<
+    - '>>'
+    - sizeof
+    CorrectAnswer: 1
+  - Question: If no user-defined constructors are provided for a class, C++ will
+      automatically generate a ________ constructor.
+    Answers:
+    - useful
+    - default
+    - local
+    - global
+    CorrectAnswer: 2
+  - Question: ________ and ________ determine the access allowed to class members.
+    Answers:
+    - new,delete
+    - public,private
+    - open,closed
+    - viewable,non-viewable
+    CorrectAnswer: 2
+  - Question: The copy semantics provided by the default C++ Copy Constructor is
+      ________.
+    Answers:
+    - dynamic access
+    - static accsess
+    - deep copy
+    - memberwise
+    CorrectAnswer: 4
+  - Question: The class ________ is called when an object goes out of scope.
+    Answers:
+    - deconstructor
+    - deleter
+    - destructor
+    - destroyer
     CorrectAnswer: 3
+  - Question: The ________ of a class is used to initialize objects of that class
+      type.
+    Answers:
+    - destructor
+    - initializer
+    - assignment operator
+    - constructor
+    CorrectAnswer: 4
+  - Question: ________ are associated with the C++ Move Constructor.
+    Answers:
+    - l-values
+    - r-values
+    - l-value references (&)
+    - r-value references (&)
+    CorrectAnswer: 4
   options:
   - {fileID: 1747492814}
   - {fileID: 1747492813}
@@ -2366,7 +2418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1693906047898623401, guid: 04328c68fa118ab42bc74040c489e1f7, type: 3}
       propertyPath: m_LocalScale.x
-      value: 13.044849
+      value: 13.0347
       objectReference: {fileID: 0}
     - target: {fileID: 1693906047898623401, guid: 04328c68fa118ab42bc74040c489e1f7, type: 3}
       propertyPath: m_LocalScale.z
@@ -2374,7 +2426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1693906047898623401, guid: 04328c68fa118ab42bc74040c489e1f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.571
+      value: 4.548
       objectReference: {fileID: 0}
     - target: {fileID: 1693906047898623401, guid: 04328c68fa118ab42bc74040c489e1f7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2447,6 +2499,14 @@ PrefabInstance:
     - target: {fileID: 7715637689892648874, guid: 04328c68fa118ab42bc74040c489e1f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 4.0221047
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715637689961134394, guid: 04328c68fa118ab42bc74040c489e1f7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.8003
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715637689961134394, guid: 04328c68fa118ab42bc74040c489e1f7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 25.164545
       objectReference: {fileID: 0}
     - target: {fileID: 7715637689969612051, guid: 04328c68fa118ab42bc74040c489e1f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2547,6 +2607,14 @@ PrefabInstance:
     - target: {fileID: 7715637691802907993, guid: 04328c68fa118ab42bc74040c489e1f7, type: 3}
       propertyPath: m_LocalPosition.y
       value: 3.267
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715637691802907993, guid: 04328c68fa118ab42bc74040c489e1f7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.5437
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715637691802907993, guid: 04328c68fa118ab42bc74040c489e1f7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 13.0392065
       objectReference: {fileID: 0}
     - target: {fileID: 7864730239492935409, guid: 04328c68fa118ab42bc74040c489e1f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4478,12 +4546,85 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactCanvas: {fileID: 1517147913}
   QnA:
-  - Question: poutses
+  - Question: The ________ operator is used by C++ to assign one object to another
+      object.
     Answers:
-    - polles
-    - polles
-    - para polles
-    - para polles polles
+    - <<
+    - =
+    - ==
+    - :=
+    CorrectAnswer: 2
+  - Question: Providing the ability for a C++ built-in operator to work with user-defined
+      types is called ________.
+    Answers:
+    - operator overriding
+    - operator inheritance
+    - operator overloading
+    - operator extension
+    CorrectAnswer: 3
+  - Question: If no overloaded assignment operator is provided by the programmer,
+      C++ will provide default assignment that does _________.
+    Answers:
+    - deep copy
+    - nothing
+    - initialization
+    - memberwise assignemt
+    CorrectAnswer: 4
+  - Question: When overloading a C++ operator, which of the following statements
+      is true?
+    Answers:
+    - the 'arity' of the operator cannot change
+    - Non C++ operators cannot be overloaded
+    - Certain C++ operators cannot be overloaded
+    - All of the Above are true
+    CorrectAnswer: 4
+  - Question: Most C++ operators can be overloaded as ________ or ________.
+    Answers:
+    - friend functions or friend classes
+    - static funcions,global functions
+    - memeber functions,non-member functions
+    - public methods,private methods
+    CorrectAnswer: 3
+  - Question: If we overload the C++ relational operators such as ==, !=, <, >, <=,
+      >= we should return the ________ type from the function.
+    Answers:
+    - int
+    - bool
+    - double
+    - short
+    CorrectAnswer: 2
+  - Question: Often overload operators implemented as non-member functions are declared
+      as ________ functions.
+    Answers:
+    - frined
+    - static
+    - private
+    - nested
+    CorrectAnswer: 1
+  - Question: Overloading the C++ assignment operator should be done when the class
+      contains ________.
+    Answers:
+    - raw pointers
+    - complex code
+    - c++ strings
+    - more than 10 attributes
+    CorrectAnswer: 1
+  - Question: 'To overload the insertion operator so that you can insert your Test
+      class objects onto an output stream, you would implement a function with the
+      following prototype:'
+    Answers:
+    - ostream operator<<(ostream os, Test &obj
+    - ostream operator<<(ostream os,const Test &obj
+    - ostream operator<<(ostream os)
+    - ostream operator<<(ostream os) const
+    CorrectAnswer: 2
+  - Question: What is the correct prototype for the Move Assignment operator for
+      a class named Test?
+    Answers:
+    - Test &Test::operator=(const Test &rhs)
+    - Test &Test::operator=(Test &rhs)
+    - Test &Test::operator=(Test &&rhs)
+    - Test &Test::operator=(const Test &&rhs)
     CorrectAnswer: 3
   options:
   - {fileID: 1064991119}
@@ -6394,7 +6535,7 @@ MonoBehaviour:
     Answers:
     - vector <double> temperatures
     - vector double temperatures
-    - vector[double temperatures
+    - vector[double] temperatures
     - double vector temperatures
     CorrectAnswer: 1
   - Question: How would you determine the number of elements contained in a vector
@@ -6411,7 +6552,7 @@ MonoBehaviour:
     - arrays can only store primitive types
     - vectors vary their capacity but arrays are fixed in size
     - vectors elements cannot be accessed using their subscript
-    CorrectAnswer: 1
+    CorrectAnswer: 3
   - Question: Arrays are always indexed starting at subscript__
     Answers:
     - 0
@@ -6436,10 +6577,10 @@ MonoBehaviour:
   - Question: 'C++ treats an array name as:'
     Answers:
     - all of the arrays elements
-    - a variablr
+    - a variable
     - the location in memory of first array element
     - the first array elent
-    CorrectAnswer: 1
+    CorrectAnswer: 3
   options:
   - {fileID: 1554024264}
   - {fileID: 1702870679}
@@ -7805,13 +7946,85 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactCanvas: {fileID: 1172184436}
   QnA:
-  - Question: poutses
+  - Question: ________ is when you derive a new class from an existing class.
     Answers:
-    - polles
-    - polles
-    - para polles
-    - para polles polles
+    - Polymorphism
+    - Including
+    - Overloading
+    - Inheritance
+    CorrectAnswer: 4
+  - Question: ________ is when a derived class has 2 or more base classes.
+    Answers:
+    - Inclusion
+    - Overloading
+    - Multiple inheritance
+    - Polymorphism
     CorrectAnswer: 3
+  - Question: 'Which statement is NOT always true given the class declarations below? 
+      class A: public B { }; class C: public B { }; class D: public C { };'
+    Answers:
+    - D is a B
+    - A is a B
+    - A is a C
+    - A is aB
+    CorrectAnswer: 3
+  - Question: Which statement below is NOT true about inheritance?
+    Answers:
+    - inheritance is a reuse mechanism
+    - inheritance is an abstraction mechanism
+    - Inheritance always improves the quality of a design
+    - inheritance can be powerful nad complex
+    CorrectAnswer: 3
+  - Question: 'Given the class declarations below. In what order are the class constructors
+      executed when we create an object of type D?  class A: public B { }; class
+      C: public B { }; class D: public C { };'
+    Answers:
+    - D C B
+    - B C D
+    - D B C
+    - Only D's constructor eecutes
+    CorrectAnswer: 2
+  - Question: 'Given the class declarations below. In what order are the class destructors
+      executed when we destroy an object of type D?  class A: public B { }; class
+      C: public B { }; class D: public C { };'
+    Answers:
+    - D C B
+    - B C D
+    - D B C
+    - Only D's destructor executes
+    CorrectAnswer: 1
+  - Question: The following base class members are always inherited by a derived
+      class.
+    Answers:
+    - private
+    - public
+    - protected
+    - All of the Above
+    CorrectAnswer: 4
+  - Question: A public data member of a base class is ________ in its derived class
+      when using public inheritance.
+    Answers:
+    - private
+    - public
+    - protected
+    - not accessible
+    CorrectAnswer: 2
+  - Question: A private data member of a base class is ________ in its derived class
+      when using public inheritance.
+    Answers:
+    - private
+    - public
+    - protected
+    - not accessible
+    CorrectAnswer: 4
+  - Question: A collection of classes related with via inheritance relationships
+      is called a(n) ________.
+    Answers:
+    - inheritance hierarchy
+    - class collection
+    - inheritance set
+    - inheritance relationship
+    CorrectAnswer: 1
   options:
   - {fileID: 1172184435}
   - {fileID: 1172184434}
@@ -8043,30 +8256,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactCanvas: {fileID: 315547924}
   QnA:
-  - Question: poutses
+  - Question: c-Style strings are terminated with a(n)
     Answers:
-    - polles
-    - polles
-    - para polles
+    - newline character \n
+    - nullptr
+    - null character
+    - a blank space
     CorrectAnswer: 3
-  - Question: poutses
+  - Question: The function we can use to copy one C-style string to another is ________.?
     Answers:
-    - polles
-    - polles
-    - para polles
-    CorrectAnswer: 3
-  - Question: poutses
+    - strlen
+    - strcpy
+    - strcat
+    - copy string
+    CorrectAnswer: 2
+  - Question: In order to use C-style string functions we must #include ________.
     Answers:
-    - polles
-    - polles
-    - para polles
-    CorrectAnswer: 3
-  - Question: poutses
+    - '"cstring"'
+    - <ctype>
+    - <string>
+    - <cstring>
+    CorrectAnswer: 4
+  - Question: To convert a char to its upper case equivalent we can use the ________
+      function.
     Answers:
-    - polles
-    - polles
-    - para polles
+    - uppercase
+    - makeupper
+    - toupper
+    - isuper
     CorrectAnswer: 3
+  - Question: The C-style string name[6] can ________.
+    Answers:
+    - contain the name"Curly"
+    - contain the name "Buster"
+    - be assgined with name = "
+    - grow in size as needed
+    CorrectAnswer: 1
+  - Question: In order to use a C++ string object, we must #include ________.
+    Answers:
+    - <c++string>
+    - <ctype>
+    - <string>
+    - <cstring>
+    CorrectAnswer: 3
+  - Question: The + operator allows us to ________ two C++ strings.
+    Answers:
+    - add
+    - capitalize
+    - concatenate
+    - superscript
+    CorrectAnswer: 3
+  - Question: In order to find the index of a substring within a C++ string, we can
+      use the ________ method.
+    Answers:
+    - locate
+    - find
+    - inspect
+    - substring
+    CorrectAnswer: 2
+  - Question: We can compare two C++ strings using the ________.
+    Answers:
+    - 'strcmp '
+    - is_equal_to
+    - test
+    - == operator
+    CorrectAnswer: 4
+  - Question: Which of the following are true about C++ strings?
+    Answers:
+    - C++ strings are objects
+    - C++ strings have a rich set of member methds
+    - C++ can change in size dynamically
+    - All of the above
+    CorrectAnswer: 4
   options:
   - {fileID: 581782895}
   - {fileID: 1015866717}
@@ -11217,11 +11478,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 58503198810640831, guid: b113a29e54e727448a4c6ac5927999ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 58503198810640831, guid: b113a29e54e727448a4c6ac5927999ee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.346
+      value: 0.488
       objectReference: {fileID: 0}
     - target: {fileID: 58503198810640831, guid: b113a29e54e727448a4c6ac5927999ee, type: 3}
       propertyPath: m_LocalRotation.x
@@ -11257,11 +11518,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 58503198810640831, guid: b113a29e54e727448a4c6ac5927999ee, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.3043814
+      value: 1.304382
       objectReference: {fileID: 0}
     - target: {fileID: 58503198810640831, guid: b113a29e54e727448a4c6ac5927999ee, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.7169404
+      value: 2.8837357
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b113a29e54e727448a4c6ac5927999ee, type: 3}
@@ -11322,6 +11583,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2d0928d3381c9a42aaadedfb4bfe44d, type: 3}
+--- !u!1001 &3284847654314788598
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3284847654216294360, guid: 5382eb5ec3e262849a9f512a15e8641f, type: 3}
+      propertyPath: m_Name
+      value: Finish point
+      objectReference: {fileID: 0}
+    - target: {fileID: 3284847654216294361, guid: 5382eb5ec3e262849a9f512a15e8641f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.48507154
+      objectReference: {fileID: 0}
+    - target: {fileID: 3284847654216294361, guid: 5382eb5ec3e262849a9f512a15e8641f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.8886024
+      objectReference: {fileID: 0}
+    - target: {fileID: 3284847654216294361, guid: 5382eb5ec3e262849a9f512a15e8641f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.210858
+      objectReference: {fileID: 0}
+    - target: {fileID: 3284847654216294361, guid: 5382eb5ec3e262849a9f512a15e8641f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3284847654216294361, guid: 5382eb5ec3e262849a9f512a15e8641f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3284847654216294361, guid: 5382eb5ec3e262849a9f512a15e8641f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3284847654216294361, guid: 5382eb5ec3e262849a9f512a15e8641f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3284847654216294361, guid: 5382eb5ec3e262849a9f512a15e8641f, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3284847654216294361, guid: 5382eb5ec3e262849a9f512a15e8641f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3284847654216294361, guid: 5382eb5ec3e262849a9f512a15e8641f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3284847654216294361, guid: 5382eb5ec3e262849a9f512a15e8641f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5382eb5ec3e262849a9f512a15e8641f, type: 3}
 --- !u!1001 &5253203478140289948
 PrefabInstance:
   m_ObjectHideFlags: 0
