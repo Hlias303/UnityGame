@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerInteract : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    [SerializeField] private Canvas[] exitCanvas;
+
     void Start()
     {
         
@@ -15,6 +18,7 @@ public class PlayerInteract : MonoBehaviour
     {
         InteractNPC();
         InteractDoor();
+        ExitCanvas();
     }
 
     void InteractNPC()
@@ -37,7 +41,6 @@ public class PlayerInteract : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {   
-            float interactRange = 2f;
             Collider[] colliderArray = Physics.OverlapBox(transform.position,transform.localScale*2);
             foreach(Collider collider in colliderArray)
             {
@@ -47,6 +50,18 @@ public class PlayerInteract : MonoBehaviour
                     bd.EnabledKeypad();
                 }
             }   
+        }
+    }
+
+    void ExitCanvas()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            foreach (Canvas can in exitCanvas)
+            {
+                can.GetComponent<Canvas>().enabled = false;
+                Cursor.lockState = CursorLockMode.Locked;
+            }
         }
     }
 }

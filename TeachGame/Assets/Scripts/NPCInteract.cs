@@ -54,7 +54,7 @@ public class NPCInteract : MonoBehaviour
 
     void SetAnswers()
     {
-        for(int i = 0 ; i <options.Length; i++ )
+        for(int i = 0 ; i < options.Length; i++ )
         {
             options[i].GetComponent<AnswerScript>().isCorrect = false;
             options[i].transform.GetChild(0).GetComponent<Text>().text =QnA[currentQuestion].Answers[i];
