@@ -2599,6 +2599,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c5f3eac4ca521418237e1a863574db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  exitCanvas:
+  - {fileID: 543130322}
+  - {fileID: 315547924}
+  - {fileID: 1747492807}
+  - {fileID: 1517147913}
+  - {fileID: 1172184436}
+  - {fileID: 1819375620}
 --- !u!4 &640557439 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5522308525470587980, guid: 2b42818de38fb9a449e457815c4e2c20, type: 3}
@@ -6382,6 +6389,56 @@ MonoBehaviour:
     - 89.0
     - it wont compile
     - it will generate an "out of range"
+    CorrectAnswer: 1
+  - Question: How would you define a vector named temperatures that contains doubles?
+    Answers:
+    - vector <double> temperatures
+    - vector double temperatures
+    - vector[double temperatures
+    - double vector temperatures
+    CorrectAnswer: 1
+  - Question: How would you determine the number of elements contained in a vector
+      named temperatures?
+    Answers:
+    - length(temperatures)
+    - temperatures.length()
+    - temperatures.size()
+    - temperatures.num elements();
+    CorrectAnswer: 3
+  - Question: What is one way that vectors and arrays are different?
+    Answers:
+    - vectors always more efficient than arrays
+    - arrays can only store primitive types
+    - vectors vary their capacity but arrays are fixed in size
+    - vectors elements cannot be accessed using their subscript
+    CorrectAnswer: 1
+  - Question: Arrays are always indexed starting at subscript__
+    Answers:
+    - 0
+    - 1
+    - start
+    - begin
+    CorrectAnswer: 1
+  - Question: 'How many integers can the array named numbers contain?  int numbers[10]; '
+    Answers:
+    - 11
+    - 9
+    - 10
+    - 0
+    CorrectAnswer: 3
+  - Question: Which of the following is a legal array definition in C++?
+    Answers:
+    - int numbers[0]
+    - double 5numbers[5];
+    - real numbers[5]
+    - float numbers[10]
+    CorrectAnswer: 4
+  - Question: 'C++ treats an array name as:'
+    Answers:
+    - all of the arrays elements
+    - a variablr
+    - the location in memory of first array element
+    - the first array elent
     CorrectAnswer: 1
   options:
   - {fileID: 1554024264}
