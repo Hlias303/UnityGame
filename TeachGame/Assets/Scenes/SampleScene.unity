@@ -8112,6 +8112,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.8
       objectReference: {fileID: 0}
+    - target: {fileID: 5908812091587108661, guid: 2b42818de38fb9a449e457815c4e2c20, type: 3}
+      propertyPath: m_Size.y
+      value: 0.7759148
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908812091587108661, guid: 2b42818de38fb9a449e457815c4e2c20, type: 3}
+      propertyPath: m_Center.y
+      value: -0.1120447
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b42818de38fb9a449e457815c4e2c20, type: 3}
 --- !u!1 &1710449429 stripped
@@ -9260,13 +9268,82 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactCanvas: {fileID: 1991697493}
   QnA:
-  - Question: poutses
+  - Question: C++ achieves polymorphism by using ________.poutses
     Answers:
-    - polles
-    - polles
-    - para polles
-    - para polles polles
+    - dynamic functions
+    - member functions
+    - static functions
+    - virtual functions
+    CorrectAnswer: 4
+  - Question: Virtual functions are very powerful since they are bound at ________.
+    Answers:
+    - load-time
+    - complie-time
+    - run-time
+    - link-time
     CorrectAnswer: 3
+  - Question: The ________ keyword is used with virtual functions to tell the compiler
+      that the function is being ________.
+    Answers:
+    - final,extened
+    - final,called
+    - override,redefined
+    - override,overrriden
+    CorrectAnswer: 4
+  - Question: In order to achieve dynamic polymorphism we must reference class objects
+      using ________.
+    Answers:
+    - A.base class pointers
+    - B.base class references
+    - C.virtual pointers
+    - A and B
+    CorrectAnswer: 4
+  - Question: Classes that declare virtual functions should always declare a virtual
+      ________.
+    Answers:
+    - copy constructors
+    - destructor
+    - copy assignment
+    - All of the Above
+    CorrectAnswer: 2
+  - Question: If a class declares a pure virtual function, then that class is considered
+      ________.
+    Answers:
+    - abstract
+    - virtual
+    - pure
+    - concrete
+    CorrectAnswer: 1
+  - Question: Classes with only pure virtual functions are often used in C++ as ________
+      classes.
+    Answers:
+    - virtual
+    - concrete
+    - interface
+    - pure
+    CorrectAnswer: 3
+  - Question: The final specifier is used to ________.
+    Answers:
+    - A. prevent a class member function from being overriden
+    - B. show a class is ready in production
+    - C.prevent a class from being derived from
+    - A and C
+    CorrectAnswer: 4
+  - Question: A class that declares a function as ________ expects it to be overridden
+      in classes derived from it.
+    Answers:
+    - virtual
+    - static
+    - 'inline '
+    - final
+    CorrectAnswer: 1
+  - Question: What statement below is NOT true?
+    Answers:
+    - Abstract base classes cannot be instantiated
+    - Dynamicpolymorphism allows programmers to think more abstractly
+    - Pointers to a base calss can be assgined the address of a derived calss object
+    - Dynamic polymorphism is more efficient than static binding
+    CorrectAnswer: 4
   options:
   - {fileID: 1403991569}
   - {fileID: 1747392010}
