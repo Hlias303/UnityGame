@@ -6,15 +6,16 @@ using UnityEngine.UI;
 public class Keypad : MonoBehaviour
 {
 
-    //public Canvas interactCanvas;
     [SerializeField] private Text Ans;
+
     [SerializeField] private Animator Door;
 
     [SerializeField] private Canvas canvasKey;
 
     [SerializeField] private GameObject player;
+
     [SerializeField] string OpenName = "DoorOpenBig";
-    //[SerializeField]int Time_to_wait = 3;
+
     private string Answer = "123";
 
 
