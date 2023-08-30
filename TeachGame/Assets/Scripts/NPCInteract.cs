@@ -31,8 +31,6 @@ public class NPCInteract : MonoBehaviour
         else
         {
             Debug.Log("Out of questions");
-            //interactCanvas.GetComponent<Canvas>().enabled = false;
-            //Cursor.lockState = CursorLockMode.Locked; 
             GameOver();
         }
 

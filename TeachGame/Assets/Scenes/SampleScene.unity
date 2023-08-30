@@ -1352,6 +1352,18 @@ PrefabInstance:
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 671769866}
+    - target: {fileID: 1696949397517492637, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 671769866}
+    - target: {fileID: 1696949397517492637, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Retry
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696949397517492638, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: quizManager
+      value: 
+      objectReference: {fileID: 671769866}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
 --- !u!1 &135305442
@@ -4994,6 +5006,18 @@ PrefabInstance:
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 1188569338}
+    - target: {fileID: 1696949397517492637, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1188569338}
+    - target: {fileID: 1696949397517492637, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Retry
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696949397517492638, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: quizManager
+      value: 
+      objectReference: {fileID: 1188569338}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
 --- !u!1 &705507993
@@ -5598,6 +5622,18 @@ PrefabInstance:
       value: Canvas (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1696949397364360995, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: quizManager
+      value: 
+      objectReference: {fileID: 88644610}
+    - target: {fileID: 1696949397517492637, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 88644610}
+    - target: {fileID: 1696949397517492637, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Retry
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696949397517492638, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 88644610}
@@ -7032,6 +7068,18 @@ PrefabInstance:
       value: Canvas (5)
       objectReference: {fileID: 0}
     - target: {fileID: 1696949397364360995, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: quizManager
+      value: 
+      objectReference: {fileID: 1872686282}
+    - target: {fileID: 1696949397517492637, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1872686282}
+    - target: {fileID: 1696949397517492637, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Retry
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696949397517492638, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 1872686282}
@@ -10878,6 +10926,18 @@ PrefabInstance:
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 1344456628}
+    - target: {fileID: 1696949397517492637, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1344456628}
+    - target: {fileID: 1696949397517492637, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Retry
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696949397517492638, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: quizManager
+      value: 
+      objectReference: {fileID: 1344456628}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
 --- !u!1 &2100510588 stripped
@@ -11321,6 +11381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1696949396812675637, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1696949397364360995, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: quizManager
       value: 
@@ -11329,10 +11393,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1111928477}
+    - target: {fileID: 1696949397517492637, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Retry
+      objectReference: {fileID: 0}
     - target: {fileID: 1696949397517492638, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: quizManager
       value: 
-      objectReference: {fileID: 1344456628}
+      objectReference: {fileID: 1111928477}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
 --- !u!114 &4162844444919543370 stripped
