@@ -17,7 +17,7 @@ public class Finish : MonoBehaviour
 
     void FinishMap()
     {
-        int FinishIndex = SceneManager.GetActiveScene().buildIndex;
+        int FinishIndex = SceneManager.GetActiveScene().buildIndex + 1;
         SceneManager.LoadScene(FinishIndex);
     }
 }
