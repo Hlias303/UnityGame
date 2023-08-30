@@ -1,6 +1,11 @@
 ﻿
+<<<<<<< Updated upstream
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+=======
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+>>>>>>> Stashed changes
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{13E108D2-9C65-CB74-B85B-E1747328F59A}"
 EndProject
 Global
