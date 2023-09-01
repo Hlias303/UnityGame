@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{d208e113-659c-74cb-b85b-e1747328f59a}</ProjectGuid>
+    <ProjectGuid>{5392dc1c-4b38-7d18-101e-77c0e1ce3979}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -40,13 +40,13 @@
      <Compile Include="Assets\Scripts\AnswerScript.cs" />
      <Compile Include="Assets\Scripts\BigDoor.cs" />
      <Compile Include="Assets\Scripts\Keypad.cs" />
+     <Compile Include="Assets\Scripts\Player\QuitApplication.cs" />
      <Compile Include="Assets\Scripts\Player\MouseView.cs" />
      <Compile Include="Assets\Scripts\QuestionsAndAnswers.cs" />
      <Compile Include="Assets\Scripts\Player\Movement.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerInteract.cs" />
      <Compile Include="Assets\Scripts\NPCInteract.cs" />
      <Compile Include="Assets\Scripts\TriggerDoor.cs" />
-     <Compile Include="Assets\Scripts\Player\QuitApplication.cs" />
      <None Include="Assets\Door Texture Pack\Readme.txt" />
      <None Include="Assets\Stylized NPC - Peasant Nolant\README.txt" />
     <Reference Include="UnityEngine">
@@ -584,67 +584,67 @@
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.1f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\TeachGame\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+        <HintPath>C:\Users\develloper uniwa\OneDrive\Υπολογιστής\UnityGame\Escape Room++\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
