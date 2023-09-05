@@ -7,6 +7,7 @@ public class PlayerInteract : MonoBehaviour
 {
 
     [SerializeField] private Canvas[] exitCanvas;
+    [SerializeField] private NPCInteract[] Quizes;
 
     void Start()
     {
@@ -44,7 +45,6 @@ public class PlayerInteract : MonoBehaviour
             Collider[] colliderArray = Physics.OverlapBox(transform.position,transform.localScale*2);
             foreach(Collider collider in colliderArray)
             {
-                Debug.Log("Collided with door ");
                 if(collider.TryGetComponent(out BigDoor bd))
                 {
                     bd.EnabledKeypad();
@@ -61,6 +61,24 @@ public class PlayerInteract : MonoBehaviour
             {
                 can.GetComponent<Canvas>().enabled = false;
                 Cursor.lockState = CursorLockMode.Locked;
+            }
+            foreach (NPCInteract npc in Quizes)
+            {
+                if(!npc.GetComponent<NPCInteract>().Completed)
+                {
+                    npc.GetComponent<NPCInteract>().score = 0;
+
+                    for (int i = 0; i < npc.GetComponent<NPCInteract>().Answered.Count; i++)
+                    {
+                        npc.GetComponent<NPCInteract>().QnA.Add(npc.GetComponent<NPCInteract>().Answered[i]);
+                    }
+
+                    npc.GetComponent<NPCInteract>().Answered = new List<QuestionsAndAnswers>();
+
+                    npc.GetComponent<NPCInteract>().QuizPanel.SetActive(true);
+                    npc.GetComponent<NPCInteract>().GoPanel.SetActive(false);
+                    npc.GetComponent<NPCInteract>().Completed = false;
+                }
             }
         }
     }

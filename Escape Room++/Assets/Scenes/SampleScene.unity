@@ -185,6 +185,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7970c12d6b19a504fbc82353b8a43abe, type: 3}
+--- !u!114 &85965148 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6362923182633083541, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+  m_PrefabInstance: {fileID: 7701104867510532353}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &88644607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1133,6 +1144,7 @@ MonoBehaviour:
     - l-value references (&)
     - r-value references (&)
     CorrectAnswer: 4
+  Answered: []
   options:
   - {fileID: 1209442093}
   - {fileID: 1710449429}
@@ -1146,6 +1158,7 @@ MonoBehaviour:
   score: 0
   QuizPanel: {fileID: 183926480}
   GoPanel: {fileID: 1145446986}
+  Completed: 0
 --- !u!1 &126597515
 GameObject:
   m_ObjectHideFlags: 0
@@ -1245,6 +1258,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1830738792}
     m_Modifications:
+    - target: {fileID: 946701477381463426, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1696949395574650400, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: quizManager
       value: 
@@ -1365,6 +1382,18 @@ PrefabInstance:
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 671769866}
+    - target: {fileID: 2720896724007390452, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 671769866}
+    - target: {fileID: 2720896724007390452, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3759179216407325855, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
 --- !u!1 &135305442
@@ -3016,6 +3045,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddc1d866bb9c2f245bc87502c847d5f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &639773027 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -5760963278936575103, guid: 2b42818de38fb9a449e457815c4e2c20, type: 3}
+  m_PrefabInstance: {fileID: 1649164148}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639773023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 634ebe07fac5d2644815b7fe4b0d7ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &639773029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3035,6 +3075,13 @@ MonoBehaviour:
   - {fileID: 1267346528}
   - {fileID: 1991697493}
   - {fileID: 457376208}
+  Quizes:
+  - {fileID: 1111928477}
+  - {fileID: 88644610}
+  - {fileID: 671769866}
+  - {fileID: 1188569338}
+  - {fileID: 1872686282}
+  - {fileID: 1344456628}
 --- !u!4 &640557439 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5522308525470587980, guid: 2b42818de38fb9a449e457815c4e2c20, type: 3}
@@ -5070,6 +5117,7 @@ MonoBehaviour:
     - Test &Test::operator=(Test &&rhs)
     - Test &Test::operator=(const Test &&rhs)
     CorrectAnswer: 3
+  Answered: []
   options:
   - {fileID: 1620878003}
   - {fileID: 2100510588}
@@ -5083,6 +5131,7 @@ MonoBehaviour:
   score: 0
   QuizPanel: {fileID: 665943526}
   GoPanel: {fileID: 528348068}
+  Completed: 0
 --- !u!114 &675742246 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6792685887233574226, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
@@ -5158,6 +5207,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1830738792}
     m_Modifications:
+    - target: {fileID: 946701477381463426, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1696949395574650400, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: quizManager
       value: 
@@ -5278,6 +5331,18 @@ PrefabInstance:
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 1188569338}
+    - target: {fileID: 2720896724007390452, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1188569338}
+    - target: {fileID: 2720896724007390452, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3759179216407325855, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
 --- !u!1 &697767223
@@ -5931,6 +5996,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1830738792}
     m_Modifications:
+    - target: {fileID: 946701477381463426, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1696949395574650400, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: quizManager
       value: 
@@ -6059,6 +6128,18 @@ PrefabInstance:
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 88644610}
+    - target: {fileID: 2720896724007390452, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 88644610}
+    - target: {fileID: 2720896724007390452, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3759179216407325855, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
 --- !u!224 &908911041 stripped
@@ -6070,6 +6151,11 @@ RectTransform:
 Canvas:
   m_CorrespondingSourceObject: {fileID: 1696949396812675634, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
   m_PrefabInstance: {fileID: 893752050}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &931214604 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 782956049118878269, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+  m_PrefabInstance: {fileID: 7701104867510532353}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &953805365 stripped
 GameObject:
@@ -7444,6 +7530,7 @@ MonoBehaviour:
     - the location in memory of first array element
     - the first array elent
     CorrectAnswer: 3
+  Answered: []
   options:
   - {fileID: 4162844445063275639}
   - {fileID: 4162844445816494240}
@@ -7457,6 +7544,7 @@ MonoBehaviour:
   score: 0
   QuizPanel: {fileID: 4162844445638252791}
   GoPanel: {fileID: 4162844444933723551}
+  Completed: 0
 --- !u!1 &1136109941 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1696949395940378383, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
@@ -7469,6 +7557,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1830738792}
     m_Modifications:
+    - target: {fileID: 946701477381463426, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1696949395574650400, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: quizManager
       value: 
@@ -7589,6 +7681,18 @@ PrefabInstance:
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 1872686282}
+    - target: {fileID: 2720896724007390452, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1872686282}
+    - target: {fileID: 2720896724007390452, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3759179216407325855, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
 --- !u!1 &1142506026 stripped
@@ -8579,6 +8683,7 @@ MonoBehaviour:
     - inheritance set
     - inheritance relationship
     CorrectAnswer: 1
+  Answered: []
   options:
   - {fileID: 827869128}
   - {fileID: 1803486259}
@@ -8592,6 +8697,7 @@ MonoBehaviour:
   score: 0
   QuizPanel: {fileID: 1188126150}
   GoPanel: {fileID: 1747623500}
+  Completed: 0
 --- !u!114 &1196225770 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1696949396111747506, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
@@ -8996,6 +9102,7 @@ MonoBehaviour:
     - C++ can change in size dynamically
     - All of the above
     CorrectAnswer: 4
+  Answered: []
   options:
   - {fileID: 1924793642}
   - {fileID: 1142506026}
@@ -9009,6 +9116,7 @@ MonoBehaviour:
   score: 0
   QuizPanel: {fileID: 22978095}
   GoPanel: {fileID: 1619319026}
+  Completed: 0
 --- !u!1 &1360028134
 GameObject:
   m_ObjectHideFlags: 0
@@ -9585,6 +9693,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5760963278936575103, guid: 2b42818de38fb9a449e457815c4e2c20, type: 3}
+      propertyPath: introduction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5760963278936575103, guid: 2b42818de38fb9a449e457815c4e2c20, type: 3}
+      propertyPath: start
+      value: 
+      objectReference: {fileID: 85965148}
+    - target: {fileID: -5760963278936575103, guid: 2b42818de38fb9a449e457815c4e2c20, type: 3}
+      propertyPath: mainCanvas
+      value: 
+      objectReference: {fileID: 931214604}
+    - target: {fileID: -5760963278936575103, guid: 2b42818de38fb9a449e457815c4e2c20, type: 3}
+      propertyPath: StartBtn
+      value: 
+      objectReference: {fileID: 85965148}
+    - target: {fileID: -5760963278936575103, guid: 2b42818de38fb9a449e457815c4e2c20, type: 3}
+      propertyPath: MainCanvas
+      value: 
+      objectReference: {fileID: 931214604}
     - target: {fileID: 4003938581460772767, guid: 2b42818de38fb9a449e457815c4e2c20, type: 3}
       propertyPath: m_Name
       value: Player
@@ -11019,6 +11147,7 @@ MonoBehaviour:
     - Pointers to a base calss can be assgined the address of a derived calss object
     - Dynamic polymorphism is more efficient than static binding
     CorrectAnswer: 4
+  Answered: []
   options:
   - {fileID: 1403991569}
   - {fileID: 1747392010}
@@ -11032,6 +11161,7 @@ MonoBehaviour:
   score: 0
   QuizPanel: {fileID: 1136109941}
   GoPanel: {fileID: 1263819085}
+  Completed: 0
 --- !u!1 &1904243446
 GameObject:
   m_ObjectHideFlags: 0
@@ -11351,6 +11481,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1830738792}
     m_Modifications:
+    - target: {fileID: 946701477381463426, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1696949395574650400, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: quizManager
       value: 
@@ -11471,6 +11605,18 @@ PrefabInstance:
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 1344456628}
+    - target: {fileID: 2720896724007390452, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1344456628}
+    - target: {fileID: 2720896724007390452, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3759179216407325855, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
 --- !u!1 &2100510588 stripped
@@ -11806,6 +11952,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1830738792}
     m_Modifications:
+    - target: {fileID: 946701477381463426, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1696949395574650400, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: quizManager
       value: 
@@ -11934,6 +12084,18 @@ PrefabInstance:
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 1111928477}
+    - target: {fileID: 2720896724007390452, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1111928477}
+    - target: {fileID: 2720896724007390452, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3759179216407325855, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
 --- !u!114 &4162844444919543370 stripped
@@ -12218,6 +12380,127 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20b63e3e2353b70448dad2aa8c68ed00, type: 3}
+--- !u!1001 &7701104867510532353
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 406751994493803573, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.649355
+      objectReference: {fileID: 0}
+    - target: {fileID: 406751994493803573, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4773506
+      objectReference: {fileID: 0}
+    - target: {fileID: 406751994493803573, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.4014578
+      objectReference: {fileID: 0}
+    - target: {fileID: 406751994493803573, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 406751994493803573, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 406751994493803573, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 406751994493803573, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 406751994493803573, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 406751994493803573, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 406751994493803573, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 406751994493803573, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 406751994493803573, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 406751994493803573, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 406751994493803573, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1871136426668597748, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1871136426668597748, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1871136426668597748, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617851814723899135, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_Name
+      value: Start Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362923182633083541, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362923182633083541, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362923182633083541, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362923182633083541, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 639773027}
+    - target: {fileID: 6362923182633083541, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MouseView, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362923182633083541, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Started
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362923182633083541, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7670697902932989654, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7670697902932989654, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8168559449215977804, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
+      propertyPath: m_Name
+      value: Introduction Panel
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 49dbde10e80f96e42a89fa1c8a27d54f, type: 3}
 --- !u!114 &8074344284854360746 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6792685887233574226, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
