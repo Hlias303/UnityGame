@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField]float yValue = 0.01f;
-    [SerializeField]float moveSpeed = 2; // MoveSpeed for the input of movement 
-     
+    [SerializeField] float yValue = 0.01f;
+    [SerializeField] float moveSpeed = 2; // MoveSpeed for the input of movement 
+    [SerializeField] private MouseView mouseView;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,10 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MovePlayer();
+        if (mouseView.introduction)
+        {
+            MovePlayer();
+        }
     }
 
     void PrintInstructions(){

@@ -8,6 +8,8 @@ public class PlayerInteract : MonoBehaviour
 
     [SerializeField] private Canvas[] exitCanvas;
     [SerializeField] private NPCInteract[] Quizes;
+    [SerializeField] private BigDoor bd;
+    [SerializeField] private Keypad kp;
 
     void Start()
     {
@@ -80,6 +82,9 @@ public class PlayerInteract : MonoBehaviour
                     npc.GetComponent<NPCInteract>().Completed = false;
                 }
             }
+
+            bd.DisableKeypad();
+            kp.ResetKeypad();
         }
     }
 }

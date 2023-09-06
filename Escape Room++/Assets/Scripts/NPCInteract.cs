@@ -14,7 +14,9 @@ public class NPCInteract : MonoBehaviour
     public int currentQuestion;
     public Text QuestionTxt;
     public Text ScoreTxT;
-    public Text PassTxT; 
+    public Text PassTxT;
+    public Text FailTxt;
+    private List<string> FailTextsList;
 
     public int TotalQuestions = 0;
     public int score;
@@ -22,6 +24,17 @@ public class NPCInteract : MonoBehaviour
     public GameObject GoPanel;
 
     public bool Completed = false;
+
+    private void Start()
+    {
+        FailTextsList = new List<string>();
+        FailTextsList.Add("Oops!\n\nIt seems like your C++ skills need a little brushing up.\n\nDon't worry, keep trying!");
+        FailTextsList.Add("Not quite there yet!\n\nKeep practicing your C++ coding skills, and you'll get better.");
+        FailTextsList.Add("You're getting warmer, but not quite there.\n\nKeep striving for C++ excellence!");
+        FailTextsList.Add("You're making progress, but C++ mastery is just around the corner.\n\nKeep going!");
+        FailTextsList.Add("Close, but no cigar!\n\nKeep on coding, and you'll soon conquer C++ challenges.");
+        FailTextsList.Add("Almost there!\n\nYou've come a long way in your C++ journey.\n\nKeep pushing forward!");
+    }
 
     public void generateQuestion()
     {
@@ -44,6 +57,8 @@ public class NPCInteract : MonoBehaviour
     {
         if (score >= TotalQuestions / 2)
         {
+            FailTxt.enabled = false;
+            Debug.Log("Success");
             QuizPanel.SetActive(false);
             GoPanel.SetActive(true);
             ScoreTxT.text = score.ToString() + "/10";
@@ -51,10 +66,14 @@ public class NPCInteract : MonoBehaviour
         }
         else
         {
+            PassTxT.enabled = false;
+            Debug.Log("Fail");
             QuizPanel.SetActive(false);
             GoPanel.SetActive(true);
             ScoreTxT.text = score.ToString() + "/10";
-            PassTxT.enabled = false;
+            FailTxt.enabled = true;
+            int position = Random.Range(0, FailTextsList.Count);
+            FailTxt.text = FailTextsList[position];
         }
         Completed = true;
     }
@@ -69,6 +88,9 @@ public class NPCInteract : MonoBehaviour
         }
 
         Answered = new List<QuestionsAndAnswers>();
+
+        PassTxT.enabled = false;
+        FailTxt.enabled = false;
 
         QuizPanel.SetActive(true);
         GoPanel.SetActive(false);
@@ -122,7 +144,16 @@ public class NPCInteract : MonoBehaviour
     {
         interactCanvas.GetComponent<Canvas>().enabled = true;
         Cursor.lockState = CursorLockMode.None;
-        TotalQuestions = QnA.Count;
+
+        if(QnA.Count > 0)
+        {
+            TotalQuestions = QnA.Count;
+        }
+        else
+        {
+            TotalQuestions = Answered.Count;
+        }
+
         QuizPanel.SetActive(true);
         GoPanel.SetActive(false);
         generateQuestion();

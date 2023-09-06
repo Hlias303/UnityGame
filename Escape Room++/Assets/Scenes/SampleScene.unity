@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &1413998 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7889213148682931342, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+  m_PrefabInstance: {fileID: 893752050}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &22978095 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1696949395940378383, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
@@ -1153,7 +1164,8 @@ MonoBehaviour:
   currentQuestion: 0
   QuestionTxt: {fileID: 2037284638}
   ScoreTxT: {fileID: 851828498}
-  PassTxT: {fileID: 575440610}
+  PassTxT: {fileID: 1177238325}
+  FailTxt: {fileID: 1413998}
   TotalQuestions: 0
   score: 0
   QuizPanel: {fileID: 183926480}
@@ -1260,7 +1272,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 946701477381463426, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1696949395574650400, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: quizManager
@@ -1382,6 +1394,10 @@ PrefabInstance:
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 671769866}
+    - target: {fileID: 1696949397517492639, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2720896724007390452, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1391,6 +1407,23 @@ PrefabInstance:
       value: Exit
       objectReference: {fileID: 0}
     - target: {fileID: 3759179216407325855, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6595847276389636017, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889213148682931342, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_Text
+      value: "You're getting warmer, but not quite there. \n\nKeep striving for C++
+        excellence!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8396765965024552306, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8857627816040385692, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
@@ -2013,85 +2046,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1696949395574650405, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
   m_PrefabInstance: {fileID: 681602105}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &360098582
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 360098583}
-  - component: {fileID: 360098585}
-  - component: {fileID: 360098584}
-  m_Layer: 5
-  m_Name: PassTxt5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &360098583
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360098582}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.60469997, y: 0.60469997, z: 0.60469997}
-  m_Children: []
-  m_Father: {fileID: 1263819086}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.9, y: 65.4}
-  m_SizeDelta: {x: 2140.349, y: 233.17113}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &360098584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360098582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 1
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 255
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: ' Room 5. You did it they key word is 8'
---- !u!222 &360098585
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360098582}
-  m_CullTransparentMesh: 0
 --- !u!1001 &378472389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2843,90 +2797,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1696949396108036711, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
   m_PrefabInstance: {fileID: 128858747}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &528348069 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1696949396108036710, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
-  m_PrefabInstance: {fileID: 128858747}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &575440608
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 575440609}
-  - component: {fileID: 575440611}
-  - component: {fileID: 575440610}
-  m_Layer: 5
-  m_Name: PassTxt2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &575440609
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575440608}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.60469997, y: 0.60469997, z: 0.60469997}
-  m_Children: []
-  m_Father: {fileID: 1145446987}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12.9, y: 68.974}
-  m_SizeDelta: {x: 2176.6611, y: 228.12689}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &575440610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575440608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 1
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 255
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: ' Room 2. You did it they key word is 5'
---- !u!222 &575440611
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575440608}
-  m_CullTransparentMesh: 0
 --- !u!114 &579531414 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1696949396111747506, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
@@ -3082,90 +2952,13 @@ MonoBehaviour:
   - {fileID: 1188569338}
   - {fileID: 1872686282}
   - {fileID: 1344456628}
+  bd: {fileID: 481683353}
+  kp: {fileID: 1478995288}
 --- !u!4 &640557439 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5522308525470587980, guid: 2b42818de38fb9a449e457815c4e2c20, type: 3}
   m_PrefabInstance: {fileID: 1649164148}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &659461304
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 659461305}
-  - component: {fileID: 659461307}
-  - component: {fileID: 659461306}
-  m_Layer: 5
-  m_Name: PassTxt6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &659461305
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 659461304}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.36565998, y: 0.36565998, z: 0.36565998}
-  m_Children: []
-  m_Father: {fileID: 1619319027}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18, y: 68.635}
-  m_SizeDelta: {x: 3571.545, y: 375.40143}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &659461306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 659461304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 1
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 255
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: ' Room 6. You did it they key word is 5'
---- !u!222 &659461307
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 659461304}
-  m_CullTransparentMesh: 0
 --- !u!1 &664709766
 GameObject:
   m_ObjectHideFlags: 0
@@ -5126,7 +4919,8 @@ MonoBehaviour:
   currentQuestion: 0
   QuestionTxt: {fileID: 718335597}
   ScoreTxT: {fileID: 588777152}
-  PassTxT: {fileID: 1005400933}
+  PassTxT: {fileID: 1540290500}
+  FailTxt: {fileID: 1750263276}
   TotalQuestions: 0
   score: 0
   QuizPanel: {fileID: 665943526}
@@ -5209,7 +5003,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 946701477381463426, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1696949395574650400, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: quizManager
@@ -5331,6 +5125,10 @@ PrefabInstance:
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 1188569338}
+    - target: {fileID: 1696949397517492639, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2720896724007390452, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -5343,87 +5141,20 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6595847276389636017, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8396765965024552306, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8857627816040385692, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
---- !u!1 &697767223
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 697767224}
-  - component: {fileID: 697767226}
-  - component: {fileID: 697767225}
-  m_Layer: 5
-  m_Name: PassTxt4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &697767224
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697767223}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.22112, y: 0.22112, z: 0.22112}
-  m_Children: []
-  m_Father: {fileID: 1747623501}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12.9, y: 62.1}
-  m_SizeDelta: {x: 5903.9546, y: 727.0333}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &697767225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697767223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 1
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 255
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: ' Room 4. You did it they key word is 1'
---- !u!222 &697767226
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697767223}
-  m_CullTransparentMesh: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -5543,90 +5274,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &737871725
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 737871726}
-  - component: {fileID: 737871728}
-  - component: {fileID: 737871727}
-  m_Layer: 5
-  m_Name: PassTxt1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &737871726
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737871725}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4162844444933723552}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20.2, y: 71.87}
-  m_SizeDelta: {x: 1305.1705, y: 143.74033}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &737871727
+--- !u!114 &765781230 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 943543219235970716, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+  m_PrefabInstance: {fileID: 2054596296}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737871725}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 1
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 255
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: ' Room 1. You did it they key word is 3'
---- !u!222 &737871728
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737871725}
-  m_CullTransparentMesh: 0
 --- !u!95 &774536226 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5453713580111005971, guid: 20b63e3e2353b70448dad2aa8c68ed00, type: 3}
   m_PrefabInstance: {fileID: 5453713579538117937}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &796734354 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7889213148682931342, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+  m_PrefabInstance: {fileID: 3335375719876190200}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &827869128 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1696949396506852239, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
@@ -5820,6 +5494,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6ee7a746e5e85d49aca4b6d70cc80d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &850148794 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 943543219235970716, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+  m_PrefabInstance: {fileID: 681602105}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &851828498 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1696949396111747506, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
@@ -5998,7 +5683,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 946701477381463426, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1696949395574650400, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: quizManager
@@ -6128,6 +5813,10 @@ PrefabInstance:
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 88644610}
+    - target: {fileID: 1696949397517492639, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2720896724007390452, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -6137,6 +5826,23 @@ PrefabInstance:
       value: Exit
       objectReference: {fileID: 0}
     - target: {fileID: 3759179216407325855, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6595847276389636017, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889213148682931342, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_Text
+      value: "Not quite there yet! \n\nKeep practicing your C++ coding skills, and
+        you'll get better."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8396765965024552306, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8857627816040385692, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
@@ -6385,6 +6091,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1696949395574650405, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
   m_PrefabInstance: {fileID: 1139938992}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &987946406 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 943543219235970716, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+  m_PrefabInstance: {fileID: 1139938992}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &993482760
 GameObject:
   m_ObjectHideFlags: 0
@@ -6477,85 +6194,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &1005400931
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1005400932}
-  - component: {fileID: 1005400934}
-  - component: {fileID: 1005400933}
-  m_Layer: 5
-  m_Name: PassTxt3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1005400932
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1005400931}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.36565998, y: 0.36565998, z: 0.36565998}
-  m_Children: []
-  m_Father: {fileID: 528348069}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18.4, y: 73.8}
-  m_SizeDelta: {x: 3603.4307, y: 403.65204}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1005400933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1005400931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 1
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 255
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: ' Room 3. You did it they key word is 2'
---- !u!222 &1005400934
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1005400931}
-  m_CullTransparentMesh: 0
 --- !u!114 &1047779338 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1696949396111747506, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
@@ -7539,7 +7177,8 @@ MonoBehaviour:
   currentQuestion: 0
   QuestionTxt: {fileID: 8074344284854360746}
   ScoreTxT: {fileID: 4162844444919543370}
-  PassTxT: {fileID: 737871727}
+  PassTxT: {fileID: 1731880150}
+  FailTxt: {fileID: 796734354}
   TotalQuestions: 0
   score: 0
   QuizPanel: {fileID: 4162844445638252791}
@@ -7559,7 +7198,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 946701477381463426, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1696949395574650400, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: quizManager
@@ -7681,6 +7320,10 @@ PrefabInstance:
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 1872686282}
+    - target: {fileID: 1696949397517492639, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2720896724007390452, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -7690,6 +7333,18 @@ PrefabInstance:
       value: Exit
       objectReference: {fileID: 0}
     - target: {fileID: 3759179216407325855, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6595847276389636017, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8396765965024552306, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8857627816040385692, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
@@ -7705,11 +7360,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1696949396108036711, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
   m_PrefabInstance: {fileID: 893752050}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &1145446987 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1696949396108036710, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+--- !u!114 &1177238325 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 943543219235970716, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
   m_PrefabInstance: {fileID: 893752050}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1188126150 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1696949395940378383, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
@@ -8692,7 +8353,8 @@ MonoBehaviour:
   currentQuestion: 0
   QuestionTxt: {fileID: 718086719}
   ScoreTxT: {fileID: 1047779338}
-  PassTxT: {fileID: 697767225}
+  PassTxT: {fileID: 850148794}
+  FailTxt: {fileID: 2067158962}
   TotalQuestions: 0
   score: 0
   QuizPanel: {fileID: 1188126150}
@@ -8879,11 +8541,6 @@ MeshFilter:
 --- !u!1 &1263819085 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1696949396108036711, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
-  m_PrefabInstance: {fileID: 1139938992}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1263819086 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1696949396108036710, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
   m_PrefabInstance: {fileID: 1139938992}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &1267346525 stripped
@@ -9111,7 +8768,8 @@ MonoBehaviour:
   currentQuestion: 0
   QuestionTxt: {fileID: 675742246}
   ScoreTxT: {fileID: 1196225770}
-  PassTxT: {fileID: 659461306}
+  PassTxT: {fileID: 765781230}
+  FailTxt: {fileID: 1489562450}
   TotalQuestions: 0
   score: 0
   QuizPanel: {fileID: 22978095}
@@ -9421,6 +9079,28 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1696949395574650405, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
   m_PrefabInstance: {fileID: 2054596296}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1478995288 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5253203478032479379, guid: 3db0d81463320f64bb78035956402285, type: 3}
+  m_PrefabInstance: {fileID: 5253203478140289948}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb8a2362d62d654e8552038cfef50e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1489562450 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7889213148682931342, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+  m_PrefabInstance: {fileID: 2054596296}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1501292591 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1696949395574650405, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
@@ -9552,6 +9232,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6ee7a746e5e85d49aca4b6d70cc80d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1540290500 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 943543219235970716, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+  m_PrefabInstance: {fileID: 128858747}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1586357521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9614,16 +9305,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1696949396108036711, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
   m_PrefabInstance: {fileID: 2054596296}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &1619319027 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1696949396108036710, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
-  m_PrefabInstance: {fileID: 2054596296}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1620878003 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1696949396506852239, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
   m_PrefabInstance: {fileID: 128858747}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1622239640 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7889213148682931342, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+  m_PrefabInstance: {fileID: 1139938992}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1644250499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9777,6 +9474,10 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: -0.1120447
       objectReference: {fileID: 0}
+    - target: {fileID: 8092581518420795248, guid: 2b42818de38fb9a449e457815c4e2c20, type: 3}
+      propertyPath: mouseView
+      value: 
+      objectReference: {fileID: 639773027}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b42818de38fb9a449e457815c4e2c20, type: 3}
 --- !u!1 &1689660425
@@ -9876,6 +9577,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1696949397364361048, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
   m_PrefabInstance: {fileID: 893752050}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1731880150 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 943543219235970716, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+  m_PrefabInstance: {fileID: 3335375719876190200}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1747392010 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1696949397364361048, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
@@ -9886,11 +9598,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1696949396108036711, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
   m_PrefabInstance: {fileID: 681602105}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &1747623501 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1696949396108036710, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
-  m_PrefabInstance: {fileID: 681602105}
+--- !u!114 &1750263276 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7889213148682931342, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+  m_PrefabInstance: {fileID: 128858747}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &1760318922 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5453713581297869051, guid: 20b63e3e2353b70448dad2aa8c68ed00, type: 3}
@@ -11156,7 +10874,8 @@ MonoBehaviour:
   currentQuestion: 0
   QuestionTxt: {fileID: 2101625233}
   ScoreTxT: {fileID: 579531414}
-  PassTxT: {fileID: 360098584}
+  PassTxT: {fileID: 987946406}
+  FailTxt: {fileID: 1622239640}
   TotalQuestions: 0
   score: 0
   QuizPanel: {fileID: 1136109941}
@@ -11483,7 +11202,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 946701477381463426, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1696949395574650400, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: quizManager
@@ -11605,6 +11324,10 @@ PrefabInstance:
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 1344456628}
+    - target: {fileID: 1696949397517492639, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2720896724007390452, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -11617,8 +11340,31 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6595847276389636017, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8396765965024552306, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8857627816040385692, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+--- !u!114 &2067158962 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7889213148682931342, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+  m_PrefabInstance: {fileID: 681602105}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2100510588 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1696949397364361048, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
@@ -11954,7 +11700,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 946701477381463426, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1696949395574650400, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: quizManager
@@ -12084,6 +11830,10 @@ PrefabInstance:
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 1111928477}
+    - target: {fileID: 1696949397517492639, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2720896724007390452, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -12093,6 +11843,23 @@ PrefabInstance:
       value: Exit
       objectReference: {fileID: 0}
     - target: {fileID: 3759179216407325855, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6595847276389636017, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889213148682931342, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_Text
+      value: "Oops! It seems like your C++ skills need a little brushing up. \n\nDon't
+        worry, keep trying!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8396765965024552306, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8857627816040385692, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
@@ -12112,11 +11879,6 @@ MonoBehaviour:
 --- !u!1 &4162844444933723551 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1696949396108036711, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
-  m_PrefabInstance: {fileID: 3335375719876190200}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &4162844444933723552 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1696949396108036710, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
   m_PrefabInstance: {fileID: 3335375719876190200}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &4162844445063275639 stripped

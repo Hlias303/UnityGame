@@ -55,18 +55,16 @@ public class Keypad : MonoBehaviour
         }
     }
 
-    void DisableKeypad()
-    {
-        canvasKey.GetComponent<Canvas>().enabled = false;
-        player.GetComponent<Movement>().enabled = true;
-        player.GetComponent<MouseView>().enabled = true;
-        Cursor.lockState = CursorLockMode.Locked;
-    }
-
     void OpenDoor()
     {
         Door.Play(OpenName,0,0.0f);
     }
 
-
+    public void ResetKeypad()
+    {
+        if (Ans.text != "")
+        {
+            Ans.text = "";
+        }
+    }
 }

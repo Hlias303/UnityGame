@@ -6,25 +6,23 @@ public class BigDoor : MonoBehaviour
 {
     [SerializeField] Canvas keypad;
     [SerializeField] GameObject player;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    
     public void EnabledKeypad()
     {
-        keypad.GetComponent<Canvas>().enabled = true;
         Debug.Log("Started Keypad");
+        keypad.GetComponent<Canvas>().enabled = true;
         player.GetComponent<Movement>().enabled = false;
         player.GetComponent<MouseView>().enabled = false; 
         Cursor.lockState = CursorLockMode.None;
+    }
+
+    public void DisableKeypad()
+    {
+        Debug.Log("Closed Keypad");
+        keypad.GetComponent<Canvas>().enabled = false;
+        player.GetComponent<Movement>().enabled = true;
+        player.GetComponent<MouseView>().enabled = true;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
 }
