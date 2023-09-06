@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField] float yValue = 0.01f;
     [SerializeField] float moveSpeed = 2; // MoveSpeed for the input of movement 
     [SerializeField] private MouseView mouseView;
 

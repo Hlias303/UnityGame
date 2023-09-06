@@ -43,9 +43,10 @@ public class Keypad : MonoBehaviour
         {
             Ans.text = "Correct!";
             Ans.color = Color.green;
+            
             OpenDoor();
-            //Invoke("OpenDoor",2);
-            Invoke("DisableKeypad",2);
+            
+
 
         }
         else

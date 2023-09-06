@@ -1120,10 +1120,10 @@ MonoBehaviour:
     CorrectAnswer: 2
   - Question: ________ and ________ determine the access allowed to class members.
     Answers:
-    - new,delete
-    - public,private
-    - open,closed
-    - viewable,non-viewable
+    - new, delete
+    - public, private
+    - open, closed
+    - viewable, non-viewable
     CorrectAnswer: 2
   - Question: The copy semantics provided by the default C++ Copy Constructor is
       ________.
@@ -1270,6 +1270,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1830738792}
     m_Modifications:
+    - target: {fileID: 943543219235970716, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_Text
+      value: "Excellent! \n\nThe third digit in the code is: '2'.\n\nJust a few more
+        to go!"
+      objectReference: {fileID: 0}
     - target: {fileID: 946701477381463426, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4865,9 +4870,9 @@ MonoBehaviour:
   - Question: Most C++ operators can be overloaded as ________ or ________.
     Answers:
     - friend functions or friend classes
-    - static funcions,global functions
-    - memeber functions,non-member functions
-    - public methods,private methods
+    - static funcions, global functions
+    - memeber functions, non-member functions
+    - public methods, private methods
     CorrectAnswer: 3
   - Question: If we overload the C++ relational operators such as ==, !=, <, >, <=,
       >= we should return the ________ type from the function.
@@ -4877,10 +4882,10 @@ MonoBehaviour:
     - double
     - short
     CorrectAnswer: 2
-  - Question: Often overload operators implemented as non-member functions are declared
-      as ________ functions.
+  - Question: Often overloaded operators implemented as non-member functions are
+      declared as ________ functions.
     Answers:
-    - frined
+    - friend
     - static
     - private
     - nested
@@ -5001,6 +5006,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1830738792}
     m_Modifications:
+    - target: {fileID: 943543219235970716, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_Text
+      value: "You're doing fantastic! \n\nHere's the fourth digit: '1'. \n\nKeep
+        solving those questions!"
+      objectReference: {fileID: 0}
     - target: {fileID: 946701477381463426, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -5681,6 +5691,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1830738792}
     m_Modifications:
+    - target: {fileID: 943543219235970716, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_Text
+      value: 'Well done!
+
+
+        Here''s the second digit of the code: ''5''.
+
+
+        You''re
+        making great progress!'
+      objectReference: {fileID: 0}
     - target: {fileID: 946701477381463426, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -7096,7 +7117,7 @@ MonoBehaviour:
   QnA:
   - Question: 'All array elements must be:'
     Answers:
-    - enclosed in square with brackets[]
+    - enclosed in square brackets[]
     - constants
     - literals
     - of the same type
@@ -7104,10 +7125,10 @@ MonoBehaviour:
   - Question: 'Given the following array declaration, how would you display 100.7 
       from the array?  double temperatures[] = {98.6, 95.2, 88.7, 100.7, 89.0};  '
     Answers:
-    - cout<< temperatures[4]<<endl
-    - cout<<100.7<<endl
-    - cout<<temps[3]<<endl
-    - cout<<temperatures[3]<<endl
+    - cout<< temperatures[4]<<endl;
+    - cout<<100.7<<endl;
+    - cout<<temps[3]<<endl;
+    - cout<<temperatures[3]<<endl;
     CorrectAnswer: 4
   - Question: Given the following array declaration, what would the following code
       display?   double temperatures[] {98.6, 95.2, 88.7, 100.7, 89.0};  cout <<
@@ -7120,10 +7141,10 @@ MonoBehaviour:
     CorrectAnswer: 1
   - Question: How would you define a vector named temperatures that contains doubles?
     Answers:
-    - vector <double> temperatures
-    - vector double temperatures
-    - vector[double] temperatures
-    - double vector temperatures
+    - vector <double> temperatures;
+    - vector double temperatures;
+    - vector[double] temperatures;
+    - double vector temperatures;
     CorrectAnswer: 1
   - Question: How would you determine the number of elements contained in a vector
       named temperatures?
@@ -7131,7 +7152,7 @@ MonoBehaviour:
     - length(temperatures)
     - temperatures.length()
     - temperatures.size()
-    - temperatures.num elements();
+    - temperatures.num elements()
     CorrectAnswer: 3
   - Question: What is one way that vectors and arrays are different?
     Answers:
@@ -7156,10 +7177,10 @@ MonoBehaviour:
     CorrectAnswer: 3
   - Question: Which of the following is a legal array definition in C++?
     Answers:
-    - int numbers[0]
+    - int numbers[0];
     - double 5numbers[5];
-    - real numbers[5]
-    - float numbers[10]
+    - real numbers[5];
+    - float numbers[10];
     CorrectAnswer: 4
   - Question: 'C++ treats an array name as:'
     Answers:
@@ -7196,6 +7217,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1830738792}
     m_Modifications:
+    - target: {fileID: 943543219235970716, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_Text
+      value: "Impressive coding skills! \n\nThe fifth digit of the code is: '8'.
+        \n\nYou're almost there!"
+      objectReference: {fileID: 0}
     - target: {fileID: 946701477381463426, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -11200,6 +11226,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1830738792}
     m_Modifications:
+    - target: {fileID: 943543219235970716, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_Text
+      value: "You're a programming genius! \n\nThe last digit of the code is: '5'.
+        \n\nI believe in you, you got this!"
+      objectReference: {fileID: 0}
     - target: {fileID: 946701477381463426, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -11698,6 +11729,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1830738792}
     m_Modifications:
+    - target: {fileID: 943543219235970716, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
+      propertyPath: m_Text
+      value: 'Impressive!
+
+
+        You''ve earned the first digit of the code: ''3''.
+
+
+        Keep
+        going!'
+      objectReference: {fileID: 0}
     - target: {fileID: 946701477381463426, guid: d883cac08f5f88f489ef56bbb9ca2446, type: 3}
       propertyPath: m_RootOrder
       value: 2
