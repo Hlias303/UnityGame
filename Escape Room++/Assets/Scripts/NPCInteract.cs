@@ -4,9 +4,11 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class NPCInteract : MonoBehaviour
 {
+    [SerializeField] private TextMeshPro RoomNumber;
     public Canvas interactCanvas;
     public List<QuestionsAndAnswers> QnA;
     public List<QuestionsAndAnswers> Answered;
@@ -63,6 +65,18 @@ public class NPCInteract : MonoBehaviour
             GoPanel.SetActive(true);
             ScoreTxT.text = score.ToString() + "/10";
             PassTxT.enabled = true;
+
+            //if (interactCanvas.name == "Canvas (1)")
+            //{
+            //    GameObject obj = GameObject.Find("Number 1");
+            //    if (obj != null)
+            //    {
+            //        Debug.Log("Found Room Number");
+            //        obj.GetComponent<TextMeshPro>().color = Color.green;
+            //    }
+            //}
+
+            RoomNumber.color = Color.green;
         }
         else
         {

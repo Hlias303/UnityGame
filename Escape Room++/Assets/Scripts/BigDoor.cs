@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BigDoor : MonoBehaviour
 {
-    [SerializeField] Canvas keypad;
+    [SerializeField] public Canvas keypad;
     [SerializeField] GameObject player;
     
     public void EnabledKeypad()

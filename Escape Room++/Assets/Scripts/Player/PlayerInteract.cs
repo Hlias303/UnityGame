@@ -83,8 +83,18 @@ public class PlayerInteract : MonoBehaviour
                 }
             }
 
-            bd.DisableKeypad();
-            kp.ResetKeypad();
+            Collider[] colliderArray = Physics.OverlapBox(transform.position, transform.localScale * 2);
+            foreach (Collider collider in colliderArray)
+            {
+                if (collider.TryGetComponent(out BigDoor bd))
+                {
+                    if(bd.keypad.GetComponent<Canvas>().enabled == true)
+                    {
+                        bd.DisableKeypad();
+                        kp.ResetKeypad();
+                    }
+                }
+            }
         }
     }
 }
