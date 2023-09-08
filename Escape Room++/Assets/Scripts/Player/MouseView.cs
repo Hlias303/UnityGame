@@ -11,12 +11,14 @@ public class MouseView : MonoBehaviour
     public float sensitivity = -1f;
     private Vector3 rotate;
     public bool introduction = false;
-    [SerializeField] private Button StartBtn;
-    [SerializeField] private Canvas MainCanvas;
+    [SerializeField] private Canvas MainMenuCanvas;
+    [SerializeField] private Canvas InfoCanvas;
 
     // Start is called before the first frame update
     void Start()
     {
+        MainMenuCanvas.GetComponent<Canvas>().enabled = true;
+        InfoCanvas.GetComponent<Canvas>().enabled = false;
         Cursor.lockState = CursorLockMode.None;
     }
 
@@ -34,8 +36,19 @@ public class MouseView : MonoBehaviour
 
     public void Started()
     {
-        MainCanvas.enabled = false;
+        InfoCanvas.GetComponent<Canvas>().enabled = false;
         introduction = true;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void MainStartBtn()
+    {
+        MainMenuCanvas.GetComponent<Canvas>().enabled = false;
+        InfoCanvas.GetComponent<Canvas>().enabled = true;
+    }
+
+    public void MainExitBtn()
+    {
+
     }
 }

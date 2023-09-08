@@ -8,6 +8,7 @@ using TMPro;
 
 public class NPCInteract : MonoBehaviour
 {
+    [SerializeField] public GameObject player;
     [SerializeField] private TextMeshPro RoomNumber;
     public Canvas interactCanvas;
     public List<QuestionsAndAnswers> QnA;
@@ -65,17 +66,6 @@ public class NPCInteract : MonoBehaviour
             GoPanel.SetActive(true);
             ScoreTxT.text = score.ToString() + "/10";
             PassTxT.enabled = true;
-
-            //if (interactCanvas.name == "Canvas (1)")
-            //{
-            //    GameObject obj = GameObject.Find("Number 1");
-            //    if (obj != null)
-            //    {
-            //        Debug.Log("Found Room Number");
-            //        obj.GetComponent<TextMeshPro>().color = Color.green;
-            //    }
-            //}
-
             RoomNumber.color = Color.green;
         }
         else
@@ -88,6 +78,7 @@ public class NPCInteract : MonoBehaviour
             FailTxt.enabled = true;
             int position = Random.Range(0, FailTextsList.Count);
             FailTxt.text = FailTextsList[position];
+            RoomNumber.color = new Color32(132, 61, 23, 255);
         }
         Completed = true;
     }
@@ -109,6 +100,7 @@ public class NPCInteract : MonoBehaviour
         QuizPanel.SetActive(true);
         GoPanel.SetActive(false);
         Completed = false;
+        RoomNumber.color = new Color32(132, 61, 23, 255);
     }
 
     public void Exit()
@@ -117,6 +109,8 @@ public class NPCInteract : MonoBehaviour
         {
             interactCanvas.GetComponent<Canvas>().enabled = false;
             Cursor.lockState = CursorLockMode.Locked;
+            player.GetComponent<Movement>().enabled = true;
+            player.GetComponent<MouseView>().enabled = true;
         }
     }
 
@@ -158,8 +152,10 @@ public class NPCInteract : MonoBehaviour
     {
         interactCanvas.GetComponent<Canvas>().enabled = true;
         Cursor.lockState = CursorLockMode.None;
+        player.GetComponent<Movement>().enabled = false;
+        player.GetComponent<MouseView>().enabled = false;
 
-        if(QnA.Count > 0)
+        if (QnA.Count > 0)
         {
             TotalQuestions = QnA.Count;
         }
