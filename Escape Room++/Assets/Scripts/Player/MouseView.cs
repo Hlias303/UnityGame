@@ -13,6 +13,7 @@ public class MouseView : MonoBehaviour
     public bool introduction = false;
     [SerializeField] private Canvas MainMenuCanvas;
     [SerializeField] private Canvas InfoCanvas;
+    [SerializeField] private Canvas PauseMenuCanvas;
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +50,12 @@ public class MouseView : MonoBehaviour
 
     public void MainExitBtn()
     {
+        Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
+    }
 
+    public void Resume()
+    {
+        PauseMenuCanvas.GetComponent<Canvas>().enabled = false;
     }
 }

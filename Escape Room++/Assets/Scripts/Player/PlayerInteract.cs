@@ -3,15 +3,9 @@ using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
 {
-
-    [SerializeField] private NPCInteract[] Quizes;
-    [SerializeField] private BigDoor bd;
+    [SerializeField] private GameObject player;
+    [SerializeField] private Canvas PauseCanvas;
     [SerializeField] private Keypad kp;
-
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()

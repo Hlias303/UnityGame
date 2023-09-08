@@ -176,7 +176,6 @@ GameObject:
   - component: {fileID: 4682283087818798246}
   - component: {fileID: 8092581518420795248}
   - component: {fileID: -5760963278936575103}
-  - component: {fileID: 8331739174489368272}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -253,8 +252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae20034a5de30de4a8355b4856c6c9fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yValue: 0.01
   moveSpeed: 2
+  mouseView: {fileID: 0}
 --- !u!114 &-5760963278936575103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,18 +267,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sensitivity: -1
---- !u!114 &8331739174489368272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4003938581460772767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc1d866bb9c2f245bc87502c847d5f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  introduction: 0
+  MainMenuCanvas: {fileID: 0}
+  InfoCanvas: {fileID: 0}
 --- !u!1 &4196151071873464672
 GameObject:
   m_ObjectHideFlags: 0
