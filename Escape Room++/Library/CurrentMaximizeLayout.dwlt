@@ -21,10 +21,17 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 987
+<<<<<<< HEAD
   m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
   controlID: 131
+=======
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
+  vertical: 0
+  controlID: 129
+>>>>>>> 245e079d5ae5ed841d1e66098539064305f97bdb
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,7 +145,11 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 132
+=======
+  controlID: 130
+>>>>>>> 245e079d5ae5ed841d1e66098539064305f97bdb
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,7 +174,11 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 55
+=======
+  controlID: 53
+>>>>>>> 245e079d5ae5ed841d1e66098539064305f97bdb
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -360,9 +375,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.0077690003, y: -0.10307817, z: 0.000801963, w: 0.9946426}
   m_Size:
-    m_Target: 1.4210944
+    m_Target: 2.6210942
     speed: 2
-    m_Value: 1.4210944
+    m_Value: 2.6210942
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -406,8 +421,13 @@ MonoBehaviour:
     y: 697
     width: 1602
     height: 290
+<<<<<<< HEAD
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
+=======
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+>>>>>>> 245e079d5ae5ed841d1e66098539064305f97bdb
   m_ActualView: {fileID: 10}
   m_Panes:
   - {fileID: 10}
@@ -452,21 +472,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Prefabs
+=======
+    - Assets/Scripts/Player
+>>>>>>> 245e079d5ae5ed841d1e66098539064305f97bdb
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Prefabs
+=======
+  - Assets/Scripts/Player
+>>>>>>> 245e079d5ae5ed841d1e66098539064305f97bdb
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\biske\Unity_Projects\UnityGame\Escape Room++
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 92450000
     m_LastClickedID: 17810
     m_ExpandedIDs: 00000000544500005645000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 11}
+    m_SelectedIDs: a6450000
+    m_LastClickedID: 17830
+    m_ExpandedIDs: 0000000052450000544500009445000000ca9a3b
+>>>>>>> 245e079d5ae5ed841d1e66098539064305f97bdb
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -494,7 +529,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 000000005445000056450000
+=======
+    m_ExpandedIDs: 000000005245000054450000
+>>>>>>> 245e079d5ae5ed841d1e66098539064305f97bdb
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -519,9 +558,15 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
+=======
+    m_SelectedInstanceIDs: fc360000
+    m_LastClickedInstanceID: 14076
+    m_HadKeyboardFocusLastEvent: 1
+>>>>>>> 245e079d5ae5ed841d1e66098539064305f97bdb
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -538,7 +583,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 12}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -632,7 +677,11 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
+<<<<<<< HEAD
   m_LastInspectedObjectInstanceID: -1
+=======
+  m_LastInspectedObjectInstanceID: 14076
+>>>>>>> 245e079d5ae5ed841d1e66098539064305f97bdb
   m_LastVerticalScrollValue: 0
   m_AssetGUID: 
   m_InstanceID: 0
