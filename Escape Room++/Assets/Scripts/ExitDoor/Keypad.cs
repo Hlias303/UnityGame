@@ -16,8 +16,15 @@ public class Keypad : MonoBehaviour
 
     [SerializeField] string OpenName = "DoorOpenBig";
 
+    AudioSource AudioDoor;
+
     private string Answer = "352185";
 
+    void Start()
+    {
+        AudioDoor = GetComponent<AudioSource>();
+        AudioDoor.enabled = false;
+    }
 
     public void Number(int number)
     {
@@ -58,6 +65,8 @@ public class Keypad : MonoBehaviour
 
     void OpenDoor()
     {
+        AudioDoor.enabled = true;
+        AudioDoor.Play();
         Door.Play(OpenName,0,0.0f);
     }
 
