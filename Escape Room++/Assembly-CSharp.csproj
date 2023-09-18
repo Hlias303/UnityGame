@@ -37,16 +37,16 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Player\Finish.cs" />
-     <Compile Include="Assets\Scripts\AnswerScript.cs" />
-     <Compile Include="Assets\Scripts\BigDoor.cs" />
-     <Compile Include="Assets\Scripts\Keypad.cs" />
+     <Compile Include="Assets\Scripts\NPC\AnswerScript.cs" />
+     <Compile Include="Assets\Scripts\ExitDoor\BigDoor.cs" />
+     <Compile Include="Assets\Scripts\ExitDoor\Keypad.cs" />
      <Compile Include="Assets\Scripts\Player\MouseView.cs" />
-     <Compile Include="Assets\Scripts\QuestionsAndAnswers.cs" />
+     <Compile Include="Assets\Scripts\NPC\QuestionsAndAnswers.cs" />
      <Compile Include="Assets\Scripts\Player\Movement.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerInteract.cs" />
-     <Compile Include="Assets\Scripts\NPCInteract.cs" />
-     <Compile Include="Assets\Scripts\TriggerDoor.cs" />
      <Compile Include="Assets\Scripts\Player\FootstepsAudio.cs" />
+     <Compile Include="Assets\Scripts\NPC\NPCInteract.cs" />
+     <Compile Include="Assets\Scripts\SimpleDoors\TriggerDoor.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
