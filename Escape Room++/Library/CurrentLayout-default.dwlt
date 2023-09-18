@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 987
-  m_MinSize: {x: 677, y: 471}
-  m_MaxSize: {x: 14000, y: 14021}
+  m_MinSize: {x: 677, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 16
+  controlID: 18
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 1602
     height: 987
-  m_MinSize: {x: 402, y: 471}
-  m_MaxSize: {x: 10000, y: 14021}
+  m_MinSize: {x: 402, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 21
+  controlID: 19
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 22
+  controlID: 20
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -396,9 +396,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0c480000
-      m_LastClickedID: 18444
-      m_ExpandedIDs: 40e6ffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 1ceaffff3eeaffff40eaffff62eaffffcaebffffeeebffffe6ecffff0cedffff5efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -458,9 +458,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.2633812, y: 1.8377936, z: 0.1473074}
+    m_Target: {x: 1.1989979, y: 1.6822274, z: 14.92793}
     speed: 2
-    m_Value: {x: 1.2633812, y: 1.8377936, z: 0.1473074}
+    m_Value: {x: 1.1989979, y: 1.6822274, z: 14.92793}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -507,9 +507,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.0024694835, y: -0.99750787, z: 0.045229163, w: -0.054887183}
+    m_Target: {x: -0.013802999, y: -0.030821407, z: 0.00044782466, w: -0.99947536}
     speed: 2
-    m_Value: {x: -0.0024015335, y: -0.9975461, z: 0.045230865, w: -0.05338856}
+    m_Value: {x: -0.01380168, y: -0.032319106, z: 0.0004685072, w: -0.99938226}
   m_Size:
     m_Target: 2.6210942
     speed: 2
@@ -576,21 +576,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scripts
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets
+  - Assets/Scripts
   m_LastFoldersGridSize: 96
-  m_LastProjectPath: C:\Users\biske\Unity_Projects\UnityGame\Escape Room++
+  m_LastProjectPath: "C:\\Users\\develloper uniwa\\OneDrive\\\u03A5\u03C0\u03BF\u03BB\u03BF\u03B3\u03B9\u03C3\u03C4\u03AE\u03C2\\UnityGame\\Escape
+    Room++"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 11}
-    m_SelectedIDs: e24f0000
-    m_LastClickedID: 20450
-    m_ExpandedIDs: 00000000e24f0000e44f000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 98450000
+    m_LastClickedID: 17816
+    m_ExpandedIDs: 00000000584500005a4500009845000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -618,7 +619,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e24f0000e44f0000
+    m_ExpandedIDs: 00000000584500005a450000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -731,7 +732,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 348
+  m_LastVerticalScrollValue: 0
   m_AssetGUID: 
   m_InstanceID: 0
   m_LockTracker:

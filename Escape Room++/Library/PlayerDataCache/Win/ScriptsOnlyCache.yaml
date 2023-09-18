@@ -134,6 +134,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
     - Class: 91
@@ -1029,4 +1031,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
   - Assets/Scenes/CreditsScene.unity
-  playerPath: C:/Users/biske/Downloads/TeachGame.exe
+  playerPath: "C:/Users/develloper uniwa/OneDrive/\u03A5\u03C0\u03BF\u03BB\u03BF\u03B3\u03B9\u03C3\u03C4\u03AE\u03C2/UnityGame/Escape
+    Room++/RunGame/TeachGame.exe"
