@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.SceneManagement;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 public class MouseView : MonoBehaviour
 {
@@ -51,7 +47,6 @@ public class MouseView : MonoBehaviour
     public void MainExitBtn()
     {
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
     }
 
     public void Resume()

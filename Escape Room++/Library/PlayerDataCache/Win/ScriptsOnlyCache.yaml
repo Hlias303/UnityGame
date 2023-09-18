@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - AnswerScript
     - BigDoor
     - Finish
+    - FootstepsAudio
     - Keypad
     - MouseView
     - Movement
@@ -21,6 +22,12 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshPro
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -63,17 +70,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11736}
     - Class: 114
-      Script: {instanceID: 12050}
+      Script: {instanceID: 11762}
     - Class: 114
-      Script: {instanceID: 12762}
+      Script: {instanceID: 12076}
     - Class: 114
-      Script: {instanceID: 13070}
+      Script: {instanceID: 12134}
     - Class: 114
-      Script: {instanceID: 13570}
+      Script: {instanceID: 12788}
     - Class: 114
-      Script: {instanceID: 14372}
+      Script: {instanceID: 13096}
     - Class: 114
-      Script: {instanceID: 14970}
+      Script: {instanceID: 13596}
+    - Class: 114
+      Script: {instanceID: 14400}
+    - Class: 114
+      Script: {instanceID: 14998}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -81,6 +92,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -107,6 +120,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
     - Class: 64
@@ -116,6 +131,8 @@ ScriptsOnlyBuild:
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
       Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
@@ -128,51 +145,59 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11710}
-    - Class: 114
       Script: {instanceID: 11736}
     - Class: 114
-      Script: {instanceID: 11836}
+      Script: {instanceID: 11762}
     - Class: 114
-      Script: {instanceID: 11904}
+      Script: {instanceID: 11862}
     - Class: 114
-      Script: {instanceID: 12050}
+      Script: {instanceID: 11930}
     - Class: 114
-      Script: {instanceID: 12108}
+      Script: {instanceID: 12076}
     - Class: 114
-      Script: {instanceID: 12510}
+      Script: {instanceID: 12134}
     - Class: 114
-      Script: {instanceID: 12762}
+      Script: {instanceID: 12536}
     - Class: 114
-      Script: {instanceID: 13034}
+      Script: {instanceID: 12788}
     - Class: 114
-      Script: {instanceID: 13070}
+      Script: {instanceID: 12846}
     - Class: 114
-      Script: {instanceID: 13192}
+      Script: {instanceID: 13060}
     - Class: 114
-      Script: {instanceID: 13362}
+      Script: {instanceID: 13218}
     - Class: 114
-      Script: {instanceID: 13808}
+      Script: {instanceID: 13388}
     - Class: 114
-      Script: {instanceID: 13916}
+      Script: {instanceID: 13834}
     - Class: 114
-      Script: {instanceID: 14010}
+      Script: {instanceID: 13938}
     - Class: 114
-      Script: {instanceID: 14050}
+      Script: {instanceID: 13942}
     - Class: 114
-      Script: {instanceID: 14212}
+      Script: {instanceID: 13960}
     - Class: 114
-      Script: {instanceID: 14372}
+      Script: {instanceID: 14036}
     - Class: 114
-      Script: {instanceID: 14756}
+      Script: {instanceID: 14076}
     - Class: 114
-      Script: {instanceID: 14918}
+      Script: {instanceID: 14144}
     - Class: 114
-      Script: {instanceID: 14954}
+      Script: {instanceID: 14240}
     - Class: 114
-      Script: {instanceID: 14970}
+      Script: {instanceID: 14400}
     - Class: 114
-      Script: {instanceID: 16308}
+      Script: {instanceID: 14684}
+    - Class: 114
+      Script: {instanceID: 14784}
+    - Class: 114
+      Script: {instanceID: 14830}
+    - Class: 114
+      Script: {instanceID: 14946}
+    - Class: 114
+      Script: {instanceID: 14982}
+    - Class: 114
+      Script: {instanceID: 14998}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -552,7 +577,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: dc38c27f90ed9f5c03f2d6338eb092f5
+      Hash: 40f5a2b849f741f5ed6f22d9b8d7be86
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MouseView
@@ -696,7 +721,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 38f8a878ef555d4cc92ca2ea42645f09
+      Hash: 878a77b215bde4979afc56b376133048
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Movement
@@ -756,10 +781,16 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: ca3a8075f64731d39b7e8d44a7e700fb
+      Hash: bacd76213066c0b49bf662568e4ee6f4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerInteract
+  - hash:
+      serializedVersion: 2
+      Hash: 1c73ff9b7dfc88e046b273f302f428b2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FootstepsAudio
   - hash:
       serializedVersion: 2
       Hash: a66794b62dbf044668a5f102bb7908c2
@@ -780,7 +811,7 @@ ScriptsOnlyBuild:
     className: CinemachineBlenderSettings
   - hash:
       serializedVersion: 2
-      Hash: 765950e22e3cb55ed9f2c77115550f55
+      Hash: 02b9ef4fb7bf9201a3c8c91dc8ba38a7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NPCInteract
@@ -998,5 +1029,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
   - Assets/Scenes/CreditsScene.unity
-  playerPath: "C:/Users/develloper uniwa/OneDrive/\u03A5\u03C0\u03BF\u03BB\u03BF\u03B3\u03B9\u03C3\u03C4\u03AE\u03C2/UnityGame/Escape
-    Room++/RunGame/TeachGame.exe"
+  playerPath: C:/Users/biske/Downloads/TeachGame.exe
