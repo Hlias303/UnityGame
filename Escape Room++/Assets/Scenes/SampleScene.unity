@@ -359,7 +359,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 639773027}
         m_TargetAssemblyTypeName: MouseView, Assembly-CSharp
-        m_MethodName: MainExitBtn
+        m_MethodName: ExitBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4047,9 +4047,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c5f3eac4ca521418237e1a863574db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 639773023}
+  Player: {fileID: 639773023}
   PauseCanvas: {fileID: 2120741691}
-  kp: {fileID: 1478995288}
+  KeyPad: {fileID: 1478995288}
 --- !u!82 &639773031
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8304,9 +8304,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 639773027}
-        m_TargetAssemblyTypeName: MouseView, Assembly-CSharp
-        m_MethodName: MainStartBtn
+      - m_Target: {fileID: 639773029}
+        m_TargetAssemblyTypeName: PlayerInteract, Assembly-CSharp
+        m_MethodName: ResumeBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15005,6 +15005,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 639773027}
+    - target: {fileID: 2646681476710168455, guid: 3a2e150305819e346864e2af4394cee3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InfoStartBtn
+      objectReference: {fileID: 0}
     - target: {fileID: 4684516177961011897, guid: 3a2e150305819e346864e2af4394cee3, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0

@@ -1,9 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using TMPro;
 
 public class NPCInteract : MonoBehaviour
@@ -144,14 +141,13 @@ public class NPCInteract : MonoBehaviour
     }
     public void Interact()
     {
-        Debug.Log("Interact");
         StartPanel();
     }
 
     void StartPanel()
     {
-        interactCanvas.GetComponent<Canvas>().enabled = true;
         Cursor.lockState = CursorLockMode.None;
+        interactCanvas.enabled = true;
         player.GetComponent<Movement>().enabled = false;
         player.GetComponent<MouseView>().enabled = false;
 

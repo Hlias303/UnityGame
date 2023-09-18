@@ -3,97 +3,126 @@ using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
 {
-    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject Player;
     [SerializeField] private Canvas PauseCanvas;
-    [SerializeField] private Keypad kp;
+    [SerializeField] private Keypad KeyPad;
+    private bool inNpcInteraction = false;
+    private bool inBigDoorInteraction = false;
+    private bool isGamePaused = false;
 
     // Update is called once per frame
     void Update()
     {
+        PauseGame();
         InteractNPC();
         InteractDoor();
     }
 
     void InteractNPC()
     {
-        // NPC interaction when the 'E' key is pressed
-        if (Input.GetKeyDown(KeyCode.E))
-        {   
-            float interactRange = 2f;
-            Collider[] colliderArray = Physics.OverlapSphere(transform.position,interactRange);
-            foreach (Collider collider in colliderArray)
+        float interactRange = 2f;
+        Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactRange);
+
+        foreach (Collider collider in colliderArray)
+        {
+            if (collider.TryGetComponent(out NPCInteract NPC))
             {
-                if (collider.TryGetComponent(out NPCInteract NPC))
+                // NPC interaction when the 'E' key is pressed
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     NPC.Interact();
+                    inNpcInteraction = true;
                 }
-            }
-        }
-
-        // Exiting the NPC interaction when the 'Escape' key is pressed
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            float interactRange = 2f;
-            Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactRange);
-            foreach (Collider collider in colliderArray)
-            {
-                if (collider.TryGetComponent(out NPCInteract NPC))
+                // Exiting the NPC interaction when the 'Escape' key is pressed
+                else if (Input.GetKeyDown(KeyCode.Escape))
                 {
-                    if (!NPC.GetComponent<NPCInteract>().Completed)
+                    if (NPC.interactCanvas.enabled && !NPC.Completed)
                     {
-                        NPC.interactCanvas.enabled = false;
                         Cursor.lockState = CursorLockMode.Locked;
+                        NPC.interactCanvas.enabled = false;
                         NPC.player.GetComponent<Movement>().enabled = true;
                         NPC.player.GetComponent<MouseView>().enabled = true;
-                        NPC.GetComponent<NPCInteract>().score = 0;
+                        NPC.score = 0;
 
-                        for (int i = 0; i < NPC.GetComponent<NPCInteract>().Answered.Count; i++)
+                        for (int i = 0; i < NPC.Answered.Count; i++)
                         {
-                            NPC.GetComponent<NPCInteract>().QnA.Add(NPC.GetComponent<NPCInteract>().Answered[i]);
+                            NPC.QnA.Add(NPC.Answered[i]);
                         }
 
-                        NPC.GetComponent<NPCInteract>().Answered = new List<QuestionsAndAnswers>();
-
-                        NPC.GetComponent<NPCInteract>().QuizPanel.SetActive(true);
-                        NPC.GetComponent<NPCInteract>().GoPanel.SetActive(false);
-                        NPC.GetComponent<NPCInteract>().Completed = false;
+                        NPC.Answered = new List<QuestionsAndAnswers>();
+                        NPC.QuizPanel.SetActive(true);
+                        NPC.GoPanel.SetActive(false);
+                        NPC.Completed = false;
+                        inNpcInteraction = false;
                     }
                 }
+
+                if (NPC.Completed && !NPC.interactCanvas.enabled) { inNpcInteraction = false; }
+
             }
         }
     }
 
     void InteractDoor()
     {
-        // Door interaction when 'E' key is pressed
-        if (Input.GetKeyDown(KeyCode.E))
-        {   
-            Collider[] colliderArray = Physics.OverlapBox(transform.position,transform.localScale*2);
-            foreach(Collider collider in colliderArray)
-            {
-                if(collider.TryGetComponent(out BigDoor bd))
-                {
-                    bd.EnabledKeypad();
-                }
-            }   
-        }
 
-        // Exiting keypad when 'Escape' key is pressed
-        if (Input.GetKeyDown(KeyCode.Escape))
+        Collider[] colliderArray = Physics.OverlapBox(transform.position, transform.localScale * 2);
+        foreach (Collider collider in colliderArray)
         {
-            Collider[] colliderArray = Physics.OverlapBox(transform.position, transform.localScale * 2);
-            foreach (Collider collider in colliderArray)
+            if (collider.TryGetComponent(out BigDoor bigDoor))  // Door interaction when 'E' key is pressed
             {
-                if (collider.TryGetComponent(out BigDoor bd))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
-                    if (bd.keypad.GetComponent<Canvas>().enabled == true)
+                    bigDoor.EnabledKeypad();
+                    inBigDoorInteraction = true;
+                }
+                else if (Input.GetKeyDown(KeyCode.Escape))  // Exiting keypad when 'Escape' key is pressed
+                {
+                    if (bigDoor.keypad.GetComponent<Canvas>().enabled)
                     {
-                        bd.DisableKeypad();
-                        kp.ResetKeypad();
+                        bigDoor.DisableKeypad();
+                        KeyPad.ResetKeypad();
+                        inBigDoorInteraction = false;
                     }
                 }
             }
+        } 
+    }
+
+    void PauseGame()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) 
+        {
+            Debug.Log("Trying to Pause Game");
+            if (Player.GetComponent<MouseView>().introduction && !inNpcInteraction && !inBigDoorInteraction && !isGamePaused)
+            {
+                isGamePaused = true;
+                PauseCanvas.enabled = true;
+                Player.GetComponent<Movement>().enabled = false;
+                Player.GetComponent<MouseView>().enabled = false;
+                Cursor.lockState = CursorLockMode.None;
+                Debug.Log("Game Paused");
+            }
+            else if (isGamePaused)
+            {
+                isGamePaused = false;
+                PauseCanvas.enabled = false;
+                Player.GetComponent<Movement>().enabled = true;
+                Player.GetComponent<MouseView>().enabled = true;
+                Cursor.lockState = CursorLockMode.Locked;
+                Debug.Log("Game Resumed");
+            }
         }
+    }
+
+    public void ResumeBtn()
+    {
+        isGamePaused = false;
+        PauseCanvas.enabled = false;
+        Player.GetComponent<Movement>().enabled = true;
+        Player.GetComponent<MouseView>().enabled = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        Debug.Log("Game Resumed");
     }
 
 }

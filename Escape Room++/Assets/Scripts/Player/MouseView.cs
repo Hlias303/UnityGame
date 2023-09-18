@@ -31,26 +31,22 @@ public class MouseView : MonoBehaviour
         }
     }
 
-    public void Started()
-    {
-        InfoCanvas.GetComponent<Canvas>().enabled = false;
-        introduction = true;
-        Cursor.lockState = CursorLockMode.Locked;
-    }
-
     public void MainStartBtn()
     {
         MainMenuCanvas.GetComponent<Canvas>().enabled = false;
         InfoCanvas.GetComponent<Canvas>().enabled = true;
     }
 
-    public void MainExitBtn()
+    public void InfoStartBtn()
+    {
+        InfoCanvas.GetComponent<Canvas>().enabled = false;
+        introduction = true;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void ExitBtn()
     {
         Application.Quit();
     }
 
-    public void Resume()
-    {
-        PauseMenuCanvas.GetComponent<Canvas>().enabled = false;
-    }
 }
