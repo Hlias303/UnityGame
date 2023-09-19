@@ -783,7 +783,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: bacd76213066c0b49bf662568e4ee6f4
+      Hash: dba6d8a32c00e1a1394c39a822f7e987
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerInteract
@@ -1031,4 +1031,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
   - Assets/Scenes/CreditsScene.unity
-  playerPath: C:/Users/biske/Downloads/GameTest/TeachGame.exe
+  playerPath: C:/Users/biske/Downloads/EscapreRoom++/TeachGame.exe

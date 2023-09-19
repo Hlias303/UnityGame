@@ -30,6 +30,7 @@ public class PlayerInteract : MonoBehaviour
                 // NPC interaction when the 'E' key is pressed
                 if (Input.GetKeyDown(KeyCode.E))
                 {
+                    Debug.Log("Trying to interact with NPC");
                     NPC.Interact();
                     inNpcInteraction = true;
                 }
@@ -73,6 +74,7 @@ public class PlayerInteract : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
+                    Debug.Log("Trying to interact with Door");
                     bigDoor.EnabledKeypad();
                     inBigDoorInteraction = true;
                 }
@@ -94,7 +96,7 @@ public class PlayerInteract : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape)) 
         {
             Debug.Log("Trying to Pause Game");
-            if (Player.GetComponent<MouseView>().introduction && !inNpcInteraction && !inBigDoorInteraction && !isGamePaused)
+            if (Player.GetComponent<MouseView>().introduction && !inNpcInteraction && !inBigDoorInteraction)
             {
                 isGamePaused = true;
                 PauseCanvas.enabled = true;
@@ -102,15 +104,6 @@ public class PlayerInteract : MonoBehaviour
                 Player.GetComponent<MouseView>().enabled = false;
                 Cursor.lockState = CursorLockMode.None;
                 Debug.Log("Game Paused");
-            }
-            else if (isGamePaused)
-            {
-                isGamePaused = false;
-                PauseCanvas.enabled = false;
-                Player.GetComponent<Movement>().enabled = true;
-                Player.GetComponent<MouseView>().enabled = true;
-                Cursor.lockState = CursorLockMode.Locked;
-                Debug.Log("Game Resumed");
             }
         }
     }
