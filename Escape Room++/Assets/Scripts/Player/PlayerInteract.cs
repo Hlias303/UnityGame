@@ -96,7 +96,7 @@ public class PlayerInteract : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape)) 
         {
             Debug.Log("Trying to Pause Game");
-            if (Player.GetComponent<MouseView>().introduction && !inNpcInteraction && !inBigDoorInteraction)
+            if (Player.GetComponent<MouseView>().introduction && !inNpcInteraction && !inBigDoorInteraction && !isGamePaused)
             {
                 isGamePaused = true;
                 PauseCanvas.enabled = true;
@@ -104,6 +104,15 @@ public class PlayerInteract : MonoBehaviour
                 Player.GetComponent<MouseView>().enabled = false;
                 Cursor.lockState = CursorLockMode.None;
                 Debug.Log("Game Paused");
+            }
+            else if (isGamePaused)
+            {
+                isGamePaused = false;
+                PauseCanvas.enabled = false;
+                Player.GetComponent<Movement>().enabled = true;
+                Player.GetComponent<MouseView>().enabled = true;
+                Cursor.lockState = CursorLockMode.Locked;
+                Debug.Log("Game Resumed");
             }
         }
     }
