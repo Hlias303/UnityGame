@@ -28,13 +28,13 @@ To get started with EscapeRoom++, follow these steps (for <b>Windows</b>):
 
 To run the game you can either:
 
-   1. Clone the whole repository
+   1. [Clone the repository](#clone-the-repository)
 
    or
 
    2. Download the [Build_EscapeRoom++](Build_EscapeRoom++) directory.
 
-After that, from the Build_EscapeRoom++ directory you can execute the [TeachGame.exe](Build_EscapeRoom++/TeachGame.exe) file.
+   After that, from the Build_EscapeRoom++ directory you can execute the [TeachGame.exe](Build_EscapeRoom++/TeachGame.exe) file.
 
 
 ## How to Play
