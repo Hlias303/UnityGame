@@ -13,7 +13,6 @@ Welcome to EscapeRoom++, a 3D Untity Game developed to test your C++ programming
 - [Directory Structure](#directory-structure)
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
