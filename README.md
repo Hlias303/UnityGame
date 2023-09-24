@@ -1,4 +1,4 @@
-# Serious Game - EscapeRoom++
+# Serious Game - EscapeRoom++ 
 
 ![Game Screenshot](screenshots/playing.png)
 
@@ -17,7 +17,7 @@ Welcome to EscapeRoom++, a 3D Untity Game developed to test your C++ programming
 
 ## Installation
 
-To get started with Labrinth, follow these steps:
+To get started with EscapeRoom++, follow these steps (for <b>Windows</b>):
 
 1. **Clone the Repository:**
 
@@ -26,7 +26,7 @@ To get started with Labrinth, follow these steps:
 
 2. **Run the Game**
 
-   You can run the game by navigating to the [Build_EscapeRoom++](Build_EscapeRoom++) Directory where you can run the game by double clicking the 
+   By navigating to the [Build_EscapeRoom++](Build_EscapeRoom++) directory you can run the game by executing the [TeachGame.exe](Build_EscapeRoom++/TeachGame.exe) file.
 
 
 ## How to Play
