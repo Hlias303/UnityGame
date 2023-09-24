@@ -27,7 +27,7 @@ To get started with EscapeRoom++, follow these steps (for <b>Windows</b>):
 
  2. Run the Game
 
-   From the Build_EscapeRoom++ directory you can execute the TeachGame.exe file.
+   From the [Build_EscapeRoom++](/Build_EscapeRoom++) directory you can execute the [TeachGame.exe](/Build_EscapeRoom++/TeachGame.exe) file.
 
 
 ## How to Play
