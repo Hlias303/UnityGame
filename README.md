@@ -8,34 +8,42 @@ Welcome to EscapeRoom++, a 3D Untity Game developed to test your C++ programming
 
 ## Table of Contents
 
-- [Installation](#installation)
+- [Clone the Repository](#clone-the-repository)
+- [Run the Game](#run-the-game)
 - [How to Play](#how-to-play)
 - [Directory Structure](#directory-structure)
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Installation
-
 To get started with EscapeRoom++, follow these steps (for <b>Windows</b>):
 
-1. **Clone the Repository:**
+## Clone the Repository
 
    ```bash
    git clone https://github.com/HliasUniwa/UnityGame
+   ```
 
-2. **Run the Game**
+## Run the Game
 
-   By navigating to the [Build_EscapeRoom++](Build_EscapeRoom++) directory you can run the game by executing the [TeachGame.exe](Build_EscapeRoom++/TeachGame.exe) file.
+To run the game you can either:
+
+   1. Clone the whole repository
+
+   or
+
+   2. Download the [Build_EscapeRoom++](Build_EscapeRoom++) directory.
+
+After that, from the Build_EscapeRoom++ directory you can execute the [TeachGame.exe](Build_EscapeRoom++/TeachGame.exe) file.
 
 
 ## How to Play
 
 1. Objective:
 
-   Your goal is to navigate throught the challenging maze, gather all the Diamonds '♦', reveal the Tresure '$', and reach it in order to win the game.
+   Your goal is to retrieve all six digits of the escape pass code in order to escape the C++ dungeon.
 
-   But, be careful because there are wild Gnomes '¤' lurking and big Traals '£'. Don't let them catch you because they will eat you.
+   To do so, 
 
 2. Controls:
 
