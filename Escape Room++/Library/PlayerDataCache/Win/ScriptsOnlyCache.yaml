@@ -1031,4 +1031,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
   - Assets/Scenes/CreditsScene.unity
-  playerPath: C:/Users/biske/Downloads/EscapreRoom++/TeachGame.exe
+  playerPath: C:/Users/biske/Downloads/EscapreRoom++_Executable/TeachGame.exe

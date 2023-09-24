@@ -14999,7 +14999,7 @@ PrefabInstance:
       objectReference: {fileID: 639773027}
     - target: {fileID: 2449714617386356927, guid: 3a2e150305819e346864e2af4394cee3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MainExitBtn
+      value: ExitBtn
       objectReference: {fileID: 0}
     - target: {fileID: 2646681476710168455, guid: 3a2e150305819e346864e2af4394cee3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
