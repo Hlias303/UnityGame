@@ -22,22 +22,12 @@ To get started with Labrinth, follow these steps:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/labrinth.git
+   git clone https://github.com/HliasUniwa/UnityGame
 
 2. **Run the Game**
 
-   Navigate to the "Release" directory:
+   You can run the game by navigating to the [Build_EscapeRoom++](Build_EscapeRoom++) Directory where you can run the game by double clicking the 
 
-   ```bash
-   cd labrinth/Release
-   ```
-
-   Execute the game:
-   ```bash
-   ./LABRINTH.exe
-   ```
-
-   Ensure that the "pdcurses.dll" file is in the same directory as "LABRINTH.exe" to run the game successfully.
 
 ## How to Play
 
