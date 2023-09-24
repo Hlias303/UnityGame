@@ -1,6 +1,6 @@
 # Serious Game - EscapeRoom++ 
 
-![Game Screenshot](Screenshots/game-main-hall.png)
+![Game Screenshot](/Screenshots/game-main-hall.png)
 
 ## Overview
 
@@ -13,7 +13,6 @@ Welcome to EscapeRoom++, a 3D Untity Game developed to test your C++ programming
 - [Directory Structure](#directory-structure)
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
@@ -36,7 +35,7 @@ To get started with EscapeRoom++, follow these steps (for <b>Windows</b>):
 
    Your goal is to retrieve all six digits of the escape pass code in order to escape the C++ dungeon.
 
-   To do so, you have to enter all six rooms. Interact with the npcs and answer the quizes correctly.
+   To do so, you have to enter all six rooms, interact with the npcs and answer the quizes correctly.
 
 2. Controls:
 
@@ -62,17 +61,32 @@ The repository is organized as follows:
 
 ## Screenshots
 
-Gameplay Screenshot 1
-_ _ _
-![Game Screenshot 1](screenshots/game_difficulties.png)
+Gameplay Screenshot 1 - Start of game
+![Game Screenshot 1](Screenshots/game-on-start.png)
 
-Gameplay Screenshot 2
-_ _ _
-![Game Screenshot 2](screenshots/playing.png)
+Gameplay Screenshot 2 - Introduction
+![Game Screenshot 2](Screenshots/game-on-intro.png)
 
-Gameplay Screenshot 3
-_ _ _
-![Game Screenshot 3](screenshots/game_over.png)
+Gameplay Screenshot 3 - Rooms
+![Game Screenshot 3](Screenshots/game-room.png)
+
+Gameplay Screenshot 4 - NPCs
+![Game Screenshot 4](Screenshots/game-room-inside.png)
+
+Gameplay Screenshot 5 - Quiz
+![Game Screenshot 5](Screenshots/game-quiz.png)
+
+Gameplay Screenshot 6 - Successful Quiz
+![Game Screenshot 6](Screenshots/game-quiz-success-1.png)
+
+Gameplay Screenshot 7 - Unsuccessful Quiz
+![Game Screenshot 7](Screenshots/game-quiz-unsuccessful.png)
+
+Gameplay Screenshot 8 - Exit Door
+![Game Screenshot 8](Screenshots/game-door-exit.png)
+
+Gameplay Screenshot 9 - Exit Door Keypad
+![Game Screenshot 9](Screenshots/game-door-keypad.png)
 
 ## Contributing
 
