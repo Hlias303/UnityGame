@@ -1,6 +1,6 @@
 # Serious Game - EscapeRoom++ 
 
-![Game Screenshot](screenshots/game-main-hall.png)
+![Game Screenshot](/Screenshots/game-main-hall.png)
 
 ## Overview
 
