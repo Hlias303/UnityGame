@@ -8,29 +8,26 @@ Welcome to EscapeRoom++, a 3D Untity Game developed to test your C++ programming
 
 ## Table of Contents
 
-- [Clone the Repository](#clone-the-repository)
-- [Run the Game](#run-the-game)
+- [Installation](#installation)
 - [How to Play](#how-to-play)
 - [Directory Structure](#directory-structure)
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
 
+## Installation
+
 To get started with EscapeRoom++, follow these steps (for <b>Windows</b>):
 
-## Clone the Repository
+   1. Clone the Repository
 
    ```bash
    git clone https://github.com/HliasUniwa/UnityGame
    ```
 
-## Run the Game
+ 2. Run the Game
 
-To run the game you can either:
-
-   1. Clone the repository
-
-   After that, from the Build_EscapeRoom++ directory you can execute the [TeachGame.exe](Build_EscapeRoom++/TeachGame.exe) file.
+   From the Build_EscapeRoom++ directory you can execute the TeachGame.exe file.
 
 
 ## How to Play
