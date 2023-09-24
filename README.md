@@ -36,33 +36,29 @@ To get started with EscapeRoom++, follow these steps (for <b>Windows</b>):
 
    Your goal is to retrieve all six digits of the escape pass code in order to escape the C++ dungeon.
 
-   To do so, 
+   To do so, you have to enter all six rooms. Interact with the npcs and answer the quizes correctly.
 
 2. Controls:
 
-   Use the arrow keys to move your character '@'.
+   Use the arrow keys to move your character.
 
-3. Difficulties
+   Use 'E' to interact with the npcs and the exit door.
 
-   The game has 3 level difficulties, Easy, Medium and Hard.
-   Don't be afraid to challenge yourself.
+   Use 'Esc' to pause the game, exit from a quiz and exit from the keypad (that pops up when you interact with the exit door).
+
+4. Difficulties
+
+   The quizes are getting harder from room 1 to room 6, so be prepared to take on a challenge.
 
 ## Directory Structure
 
 The repository is organized as follows:
 
-- Release: Contains the pre-built game executable and required files.
+- [Build_EscapeRoom++](/Build_EscapeRoom++): Contains the pre-built game executable and required files.
 
-   - LABRINTH.exe: The game executable.
-   - pdcurses.dll: A required dynamic link library.
-   - gamefiles: Additional game files.
-      - map.txt: Maze configuration in text format.
-      - scores.bin: Binary file to store high scores.
+- [UnityProject_EscapeRoom++](/UnityGame_EscapeRoom++): Contains the source code, assets and other necessary files for Unity.
 
-- src: Contains the source code for the Labrinth game.
-  - All the C++ (.cpp) and header (.h) files used to create the game.
-  - map.txt: Maze configuration for development/testing.
-  - scores.bin: High scores file for development/testing.
+- [Screenshots](/Screenshots): Contains in-game screenshots.
 
 ## Screenshots
 
@@ -80,12 +76,8 @@ _ _ _
 
 ## Contributing
 
-Contributions are welcome! If you want to contribute to this project, please follow the guidelines outlined in [CONTRIBUTING.md](https://github.com/keleviss/labrinth/blob/main/CONTRIBUTING.md).
-
-## License
-
-This project is licensed under [Apache License](https://github.com/keleviss/labrinth/blob/main/LICENSE).
+Contributions are welcome! If you want to contribute to this project, please follow the guidelines outlined in [CONTRIBUTING.md](https://github.com/HliasUniwa/UnityGame/CONTRIBUTING.md).
 
 * * *
 
-Enjoy the Labrinth maze adventure, and may your scores be legendary!
+Enjoy the EscapeRoom++ quiz adventure, and may your scores be legendary!
